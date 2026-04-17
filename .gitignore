@@ -1,0 +1,28 @@
+# API keys — never commit these
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.venv/
+*.egg-info/
+
+# Models (too large for git)
+models/
+
+# Data (large files)
+data/opus_sample/
+data/csi_annotations.jsonl
+data/llm_formality_labels.jsonl
+
+# Streamlit
+.streamlit/
+
+# Mac
+.DS_Store
+
+# IDE
+.vscode/
+.idea/

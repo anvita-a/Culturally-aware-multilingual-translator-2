@@ -1,0 +1,17 @@
+{
+  "datasets": [
+    "Pavlick & Tetreault (2016)",
+    "X-FORMAL (Briakou et al., 2021)"
+  ],
+  "total": 9253,
+  "train": 7402,
+  "test": 1851,
+  "label_dist": {
+    "formal": 3605,
+    "casual": 3288,
+    "neutral": 2360
+  },
+  "lang_dist": {
+    "en": 9253
+  }
+}

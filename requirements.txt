@@ -1,0 +1,67 @@
+# ══════════════════════════════════════════════════════════════════
+# CulturaTrans — requirements.txt
+# Install: pip install -r requirements.txt
+# ══════════════════════════════════════════════════════════════════
+
+
+# ── Core UI ───────────────────────────────────────────────────────
+streamlit>=1.35.0
+
+
+# ── LLM API backends (app uses whichever key is in .env) ──────────
+google-generativeai>=0.7.0          # Gemini — free, recommended for campus WiFi
+openai>=1.30.0                      # GPT-4o-mini / GPT-3.5-turbo
+groq>=0.9.0                         # Llama 3.3 70B — free tier
+anthropic>=0.25.0                   # Claude — used only in build_opus_index.py
+
+
+# ── Pipeline dependencies ─────────────────────────────────────────
+python-dotenv>=1.0.0                # .env file loading
+langdetect>=1.0.9                   # Source language detection
+json-repair>=0.25.0                 # Fixes malformed LLM JSON output
+rank-bm25>=0.2.2                    # BM25 retrieval for few-shot examples
+
+
+# ── ML / NLP (formality classifier + future Asmi/Anshul models) ──
+torch>=2.2.0                        # PyTorch — required by transformers
+transformers>=4.40.0                # XLM-RoBERTa formality classifier
+accelerate>=0.29.0                  # Required by transformers Trainer
+sentencepiece>=0.2.0                # Tokenizer for multilingual models
+protobuf>=4.25.0                    # Required by sentencepiece
+
+
+# ── Datasets ─────────────────────────────────────────────────────
+datasets>=2.19.0                    # FLORES-200, OPUS-100, Pavlick formality scores
+
+
+# ── Data processing ───────────────────────────────────────────────
+pandas>=2.2.0                       # CSV handling in build_formality_data.py
+numpy>=1.26.0                       # Numerical ops in train_formality.py
+scikit-learn>=1.4.0                 # Train/test split in build_formality_data.py
+
+
+# ── Evaluation (run in Week 3) ────────────────────────────────────
+sacrebleu>=2.4.0                    # BLEU score evaluation
+unbabel-comet>=2.2.0                # COMET neural MT evaluation metric
+googletrans==4.0.0rc1               # Google Translate baseline comparison
+
+
+# ══════════════════════════════════════════════════════════════════
+# NOTES
+#
+# PyTorch install:
+#   The torch line above installs the CPU version by default.
+#   If you have a GPU: pip install torch --index-url https://download.pytorch.org/whl/cu118
+#
+# googletrans pinned to rc1:
+#   The stable release of googletrans is broken. The rc1 version works.
+#   Only needed for eval/bleu_comet.py (Week 3), not for the app itself.
+#
+# unbabel-comet:
+#   Downloads ~1.5GB model on first use. Only needed for Week 3 evaluation.
+#   If you want to skip it for now: comment out the unbabel-comet line.
+#
+# Minimum set to run the app right now (no training, no eval):
+#   pip install streamlit python-dotenv langdetect json-repair rank-bm25
+#          google-generativeai openai groq datasets
+# ══════════════════════════════════════════════════════════════════
