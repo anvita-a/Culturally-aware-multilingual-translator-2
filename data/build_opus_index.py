@@ -138,33 +138,31 @@ def generate_variants_for_pair(
     # Reload .env in case it was updated after process started
     load_dotenv(override=True)
 
-    # Try Gemini first (free, 15 req/min)
-    gemini_key = os.getenv("GEMINI_API_KEY")
-    if gemini_key:
+    # Try Groq first (free tier, fast, llama-3.3-70b-versatile)
+    groq_key = os.getenv("GROQ_API_KEY")
+    if groq_key:
         try:
-            import google.generativeai as genai
-            genai.configure(api_key=gemini_key)
-            model = genai.GenerativeModel(
-                "gemini-1.5-flash",
-                generation_config=genai.GenerationConfig(
-                    response_mime_type="application/json",
-                    max_output_tokens=512,
-                    temperature=0.1,
-                )
+            from groq import Groq
+            client = Groq(api_key=groq_key)
+            resp = client.chat.completions.create(
+                model="llama-3.3-70b-versatile",
+                max_tokens=512,
+                temperature=0.1,
+                response_format={"type": "json_object"},
+                messages=[{"role": "user", "content": prompt}],
             )
-            data = json.loads(model.generate_content(prompt).text)
-            return {
-                "source":  source, "target": target,
-                "formal":  data.get("formal",  target),
-                "casual":  data.get("casual",  target),
-                "literal": data.get("literal", target),
-            }
+            data = json.loads(resp.choices[0].message.content)
+            if data.get("formal"):
+                return {
+                    "source":  source, "target": target,
+                    "formal":  data.get("formal",  target),
+                    "casual":  data.get("casual",  target),
+                    "literal": data.get("literal", target),
+                }
         except Exception as e:
-            logger.warning(f"Gemini variant generation failed: {e}")
-    else:
-        logger.debug("No GEMINI_API_KEY found — skipping Gemini")
+            logger.warning(f"Groq variant generation failed: {e}")
 
-    # Try OpenAI (gpt-4o-mini is cheapest good option)
+    # Try OpenAI as fallback (gpt-4o-mini)
     openai_key = os.getenv("OPENAI_API_KEY")
     if openai_key:
         try:
@@ -187,31 +185,7 @@ def generate_variants_for_pair(
         except Exception as e:
             logger.debug(f"OpenAI variant generation failed: {e}")
 
-    # Try Groq (free tier)
-    groq_key = os.getenv("GROQ_API_KEY")
-    if groq_key:
-        try:
-            from groq import Groq
-            client = Groq(api_key=groq_key)
-            resp = client.chat.completions.create(
-                model="llama-3.3-70b-versatile",
-                max_tokens=512,
-                temperature=0.1,
-                messages=[{"role": "user", "content": prompt}],
-            )
-            raw = resp.choices[0].message.content.strip()
-            import re as _re
-            match = _re.search(r"\{[\s\S]*\}", raw)
-            data = json.loads(match.group(0)) if match else {}
-            if data.get("formal"):
-                return {
-                    "source":  source, "target": target,
-                    "formal":  data.get("formal",  target),
-                    "casual":  data.get("casual",  target),
-                    "literal": data.get("literal", target),
-                }
-        except Exception as e:
-            logger.debug(f"Groq variant generation failed: {e}")
+
 
     # No API worked — store base translation for all variants
     # This still builds a valid BM25 index; only the few-shot examples are less rich

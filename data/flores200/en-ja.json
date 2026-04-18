@@ -1,0 +1,602 @@
+[
+  {
+    "source": "You won't.",
+    "reference": "あなたには分からない",
+    "sentence_eng_Latn": "You won't.",
+    "sentence_jpn_Jpan": "あなたには分からない"
+  },
+  {
+    "source": "No way.",
+    "reference": "まさか。",
+    "sentence_eng_Latn": "No way.",
+    "sentence_jpn_Jpan": "まさか。"
+  },
+  {
+    "source": "- It's not safe.",
+    "reference": "- 危険よ",
+    "sentence_eng_Latn": "- It's not safe.",
+    "sentence_jpn_Jpan": "- 危険よ"
+  },
+  {
+    "source": "Ah, you know, he worries too much.",
+    "reference": "分かるだろ 苦労しすぎだ",
+    "sentence_eng_Latn": "Ah, you know, he worries too much.",
+    "sentence_jpn_Jpan": "分かるだろ 苦労しすぎだ"
+  },
+  {
+    "source": "OK, we are in.",
+    "reference": "作業に入る。",
+    "sentence_eng_Latn": "OK, we are in.",
+    "sentence_jpn_Jpan": "作業に入る。"
+  },
+  {
+    "source": "I know you are.",
+    "reference": "ボクには分かる",
+    "sentence_eng_Latn": "I know you are.",
+    "sentence_jpn_Jpan": "ボクには分かる"
+  },
+  {
+    "source": "Because, man, we're supposed to be on this trip together. - What the hell?",
+    "reference": "一緒に旅行するからだ",
+    "sentence_eng_Latn": "Because, man, we're supposed to be on this trip together. - What the hell?",
+    "sentence_jpn_Jpan": "一緒に旅行するからだ"
+  },
+  {
+    "source": "That is fucking brilliant.",
+    "reference": "素晴らしいな",
+    "sentence_eng_Latn": "That is fucking brilliant.",
+    "sentence_jpn_Jpan": "素晴らしいな"
+  },
+  {
+    "source": "- Hold it.",
+    "reference": "- 待ってくれ",
+    "sentence_eng_Latn": "- Hold it.",
+    "sentence_jpn_Jpan": "- 待ってくれ"
+  },
+  {
+    "source": "You called me, remember?",
+    "reference": "俺を呼んだのを 忘れたのか？",
+    "sentence_eng_Latn": "You called me, remember?",
+    "sentence_jpn_Jpan": "俺を呼んだのを 忘れたのか？"
+  },
+  {
+    "source": "Then who are you?",
+    "reference": "じゃあ　君は誰だ?",
+    "sentence_eng_Latn": "Then who are you?",
+    "sentence_jpn_Jpan": "じゃあ　君は誰だ?"
+  },
+  {
+    "source": "Since when have we been paying you to have feelings?",
+    "reference": "今までに、どの位の間 給料を払っているんだ？",
+    "sentence_eng_Latn": "Since when have we been paying you to have feelings?",
+    "sentence_jpn_Jpan": "今までに、どの位の間 給料を払っているんだ？"
+  },
+  {
+    "source": "- you know, the...",
+    "reference": "- 君は...",
+    "sentence_eng_Latn": "- you know, the...",
+    "sentence_jpn_Jpan": "- 君は..."
+  },
+  {
+    "source": "- Buñuel? - Sí.",
+    "reference": "- ブリュエル？",
+    "sentence_eng_Latn": "- Buñuel? - Sí.",
+    "sentence_jpn_Jpan": "- ブリュエル？"
+  },
+  {
+    "source": "That is Peter Kent.",
+    "reference": "ピーター・ケント",
+    "sentence_eng_Latn": "That is Peter Kent.",
+    "sentence_jpn_Jpan": "ピーター・ケント"
+  },
+  {
+    "source": "I did.",
+    "reference": "聞こえたわ",
+    "sentence_eng_Latn": "I did.",
+    "sentence_jpn_Jpan": "聞こえたわ"
+  },
+  {
+    "source": "[We told him:] ‘Take a faggot in your hand and then strike [your wife] with it, but do not break [your] oath.’ Indeed, We found him to be patient. What an excellent servant! Indeed he was a penitent [soul].",
+    "reference": "（そして言った。）「一握りの草を手に取って，それで（妻を）打て。あなたの誓いを破ってはならない。」われは，かれが良く耐え忍ぶことを知った。何と優れたしもべではないか。かれは（主の命令に服して）常に（われの許に）帰った。",
+    "sentence_eng_Latn": "[We told him:] ‘Take a faggot in your hand and then strike [your wife] with it, but do not break [your] oath.’ Indeed, We found him to be patient. What an excellent servant! Indeed he was a penitent [soul].",
+    "sentence_jpn_Jpan": "（そして言った。）「一握りの草を手に取って，それで（妻を）打て。あなたの誓いを破ってはならない。」われは，かれが良く耐え忍ぶことを知った。何と優れたしもべではないか。かれは（主の命令に服して）常に（われの許に）帰った。"
+  },
+  {
+    "source": "Hello.",
+    "reference": "もしもし",
+    "sentence_eng_Latn": "Hello.",
+    "sentence_jpn_Jpan": "もしもし"
+  },
+  {
+    "source": "Someone inserted a redirect.",
+    "reference": "誰かがリダイレクトを挿入。",
+    "sentence_eng_Latn": "Someone inserted a redirect.",
+    "sentence_jpn_Jpan": "誰かがリダイレクトを挿入。"
+  },
+  {
+    "source": "God!",
+    "reference": "もう！",
+    "sentence_eng_Latn": "God!",
+    "sentence_jpn_Jpan": "もう！"
+  },
+  {
+    "source": "Damn it.",
+    "reference": "クソッ",
+    "sentence_eng_Latn": "Damn it.",
+    "sentence_jpn_Jpan": "クソッ"
+  },
+  {
+    "source": "Step lively, Mr. Nickerson!",
+    "reference": "踏み出せ、ニッカーソン！",
+    "sentence_eng_Latn": "Step lively, Mr. Nickerson!",
+    "sentence_jpn_Jpan": "踏み出せ、ニッカーソン！"
+  },
+  {
+    "source": "It should be you, Frank.",
+    "reference": "君がいいだろう",
+    "sentence_eng_Latn": "It should be you, Frank.",
+    "sentence_jpn_Jpan": "君がいいだろう"
+  },
+  {
+    "source": "I give you one thing to do, one thing to do, and you drop the ball on that?",
+    "reference": "私はあなたに行うための一つのことを与え、 行うには一つのこと、 あなたは、その上でボールをドロップする？",
+    "sentence_eng_Latn": "I give you one thing to do, one thing to do, and you drop the ball on that?",
+    "sentence_jpn_Jpan": "私はあなたに行うための一つのことを与え、 行うには一つのこと、 あなたは、その上でボールをドロップする？"
+  },
+  {
+    "source": "How did our experiment with the plane go?",
+    "reference": "飛行機での実験は？",
+    "sentence_eng_Latn": "How did our experiment with the plane go?",
+    "sentence_jpn_Jpan": "飛行機での実験は？"
+  },
+  {
+    "source": "You said you would help me.",
+    "reference": "あなたは私を助けると言った",
+    "sentence_eng_Latn": "You said you would help me.",
+    "sentence_jpn_Jpan": "あなたは私を助けると言った"
+  },
+  {
+    "source": "Moriarty said he did things like this for a living.",
+    "reference": "モリアティーは　こういうことを生業にしてると 言ってたわ",
+    "sentence_eng_Latn": "Moriarty said he did things like this for a living.",
+    "sentence_jpn_Jpan": "モリアティーは　こういうことを生業にしてると 言ってたわ"
+  },
+  {
+    "source": "So glory be to Him in whose hand is the dominion of everything, and to Him you will be returned.",
+    "reference": "かれにこそ凡ての称讃あれ。その御手で万有を統御なされる御方，あなたがたはかれの御許に帰されるのである。",
+    "sentence_eng_Latn": "So glory be to Him in whose hand is the dominion of everything, and to Him you will be returned.",
+    "sentence_jpn_Jpan": "かれにこそ凡ての称讃あれ。その御手で万有を統御なされる御方，あなたがたはかれの御許に帰されるのである。"
+  },
+  {
+    "source": "- Shut up.",
+    "reference": "- いいから",
+    "sentence_eng_Latn": "- Shut up.",
+    "sentence_jpn_Jpan": "- いいから"
+  },
+  {
+    "source": "The use of explosives higher than Class 4 is prohibited...",
+    "reference": "4Aクラス以上の 爆発物の使用は...",
+    "sentence_eng_Latn": "The use of explosives higher than Class 4 is prohibited...",
+    "sentence_jpn_Jpan": "4Aクラス以上の 爆発物の使用は..."
+  },
+  {
+    "source": "I'm not going to let her toy with me.",
+    "reference": "玩具にはならない！",
+    "sentence_eng_Latn": "I'm not going to let her toy with me.",
+    "sentence_jpn_Jpan": "玩具にはならない！"
+  },
+  {
+    "source": "Set Powersaving Scheme to '%1 '",
+    "reference": "省電力スキームを “%1” にセットNote this is a KRunner keyword",
+    "sentence_eng_Latn": "Set Powersaving Scheme to '%1 '",
+    "sentence_jpn_Jpan": "省電力スキームを “%1” にセットNote this is a KRunner keyword"
+  },
+  {
+    "source": "I don't think you're the man behind this.",
+    "reference": "あなたは事件の黒幕ではない",
+    "sentence_eng_Latn": "I don't think you're the man behind this.",
+    "sentence_jpn_Jpan": "あなたは事件の黒幕ではない"
+  },
+  {
+    "source": "- I'm sorry that I put you back here.",
+    "reference": "- ゴメンよ、俺のせいでまた...",
+    "sentence_eng_Latn": "- I'm sorry that I put you back here.",
+    "sentence_jpn_Jpan": "- ゴメンよ、俺のせいでまた..."
+  },
+  {
+    "source": "I mean, I love Turner, but, I just find this... overwhelming.",
+    "reference": "わたし　ターナーは大好き でも　ちょっと 圧倒されちゃう",
+    "sentence_eng_Latn": "I mean, I love Turner, but, I just find this... overwhelming.",
+    "sentence_jpn_Jpan": "わたし　ターナーは大好き でも　ちょっと 圧倒されちゃう"
+  },
+  {
+    "source": "Because I distinctly remember putting a hat on top of my head.",
+    "reference": "「私は、頭の上の帽子を自分で載せたことを、 間違いなく覚えていますから」",
+    "sentence_eng_Latn": "Because I distinctly remember putting a hat on top of my head.",
+    "sentence_jpn_Jpan": "「私は、頭の上の帽子を自分で載せたことを、 間違いなく覚えていますから」"
+  },
+  {
+    "source": "- Is she breathing?",
+    "reference": "呼吸は？",
+    "sentence_eng_Latn": "- Is she breathing?",
+    "sentence_jpn_Jpan": "呼吸は？"
+  },
+  {
+    "source": "He comes waltzing in here, full of all kinds of good advice.",
+    "reference": "滑稽なもんだな！",
+    "sentence_eng_Latn": "He comes waltzing in here, full of all kinds of good advice.",
+    "sentence_jpn_Jpan": "滑稽なもんだな！"
+  },
+  {
+    "source": "What do you mean, crowding me?",
+    "reference": "重荷って?",
+    "sentence_eng_Latn": "What do you mean, crowding me?",
+    "sentence_jpn_Jpan": "重荷って?"
+  },
+  {
+    "source": "Turn around.",
+    "reference": "こっちを向け",
+    "sentence_eng_Latn": "Turn around.",
+    "sentence_jpn_Jpan": "こっちを向け"
+  },
+  {
+    "source": "I'm a big fan of American cooking.",
+    "reference": "私はアメリカの料理が大好きです。",
+    "sentence_eng_Latn": "I'm a big fan of American cooking.",
+    "sentence_jpn_Jpan": "私はアメリカの料理が大好きです。"
+  },
+  {
+    "source": "- Maggie.",
+    "reference": "- マギーのこと",
+    "sentence_eng_Latn": "- Maggie.",
+    "sentence_jpn_Jpan": "- マギーのこと"
+  },
+  {
+    "source": "I don't understand.",
+    "reference": "何事ですか",
+    "sentence_eng_Latn": "I don't understand.",
+    "sentence_jpn_Jpan": "何事ですか"
+  },
+  {
+    "source": "Even prostitutes may earn the mercy of the Mother.",
+    "reference": "娼婦にさえも神のご慈悲があるのです",
+    "sentence_eng_Latn": "Even prostitutes may earn the mercy of the Mother.",
+    "sentence_jpn_Jpan": "娼婦にさえも神のご慈悲があるのです"
+  },
+  {
+    "source": "- Is this all right?",
+    "reference": "-これはすべての権利はありますか？",
+    "sentence_eng_Latn": "- Is this all right?",
+    "sentence_jpn_Jpan": "-これはすべての権利はありますか？"
+  },
+  {
+    "source": "Where'd you get this?",
+    "reference": "どこでこれを?",
+    "sentence_eng_Latn": "Where'd you get this?",
+    "sentence_jpn_Jpan": "どこでこれを?"
+  },
+  {
+    "source": "No, please, don't hurt me!",
+    "reference": "お願い、助けて!",
+    "sentence_eng_Latn": "No, please, don't hurt me!",
+    "sentence_jpn_Jpan": "お願い、助けて!"
+  },
+  {
+    "source": "Why are you here?",
+    "reference": "( なぜここに来た？ )",
+    "sentence_eng_Latn": "Why are you here?",
+    "sentence_jpn_Jpan": "( なぜここに来た？ )"
+  },
+  {
+    "source": "Which would explain why we found her in handcuffs.",
+    "reference": "手錠をかけられているのは そのためだろう",
+    "sentence_eng_Latn": "Which would explain why we found her in handcuffs.",
+    "sentence_jpn_Jpan": "手錠をかけられているのは そのためだろう"
+  },
+  {
+    "source": "- Look closely.",
+    "reference": "血管造影図を撮るための 普通の同意書です",
+    "sentence_eng_Latn": "- Look closely.",
+    "sentence_jpn_Jpan": "血管造影図を撮るための 普通の同意書です"
+  },
+  {
+    "source": "Who came to your aid?",
+    "reference": "誰があんたらを助けた？",
+    "sentence_eng_Latn": "Who came to your aid?",
+    "sentence_jpn_Jpan": "誰があんたらを助けた？"
+  },
+  {
+    "source": "******",
+    "reference": "ハンソンの自宅 カリフォルニア州　マリブ",
+    "sentence_eng_Latn": "******",
+    "sentence_jpn_Jpan": "ハンソンの自宅 カリフォルニア州　マリブ"
+  },
+  {
+    "source": "I mean, um, don't get me wrong,",
+    "reference": "でも― 誤解しないでね",
+    "sentence_eng_Latn": "I mean, um, don't get me wrong,",
+    "sentence_jpn_Jpan": "でも― 誤解しないでね"
+  },
+  {
+    "source": "- What is it, General?",
+    "reference": "- 何だ 将軍？",
+    "sentence_eng_Latn": "- What is it, General?",
+    "sentence_jpn_Jpan": "- 何だ 将軍？"
+  },
+  {
+    "source": "(It is) a Scripture that is revealed unto thee (Muhammad) - so let there be no heaviness in thy heart therefrom - that thou mayst warn thereby, and (it is) a Reminder unto believers.",
+    "reference": "（これは）あなたに下した啓典である。あなたはそれで，もう意気そそうしてはならない。あなたが信者たちに訓戒し，警告するため（に下されたもの）である。",
+    "sentence_eng_Latn": "(It is) a Scripture that is revealed unto thee (Muhammad) - so let there be no heaviness in thy heart therefrom - that thou mayst warn thereby, and (it is) a Reminder unto believers.",
+    "sentence_jpn_Jpan": "（これは）あなたに下した啓典である。あなたはそれで，もう意気そそうしてはならない。あなたが信者たちに訓戒し，警告するため（に下されたもの）である。"
+  },
+  {
+    "source": "But why?",
+    "reference": "でもなんで？",
+    "sentence_eng_Latn": "But why?",
+    "sentence_jpn_Jpan": "でもなんで？"
+  },
+  {
+    "source": "If it wasn't for her, we wouldn't have gotten to Margot in time.",
+    "reference": "彼女のお陰で マーゴーを見つけたのに・・・",
+    "sentence_eng_Latn": "If it wasn't for her, we wouldn't have gotten to Margot in time.",
+    "sentence_jpn_Jpan": "彼女のお陰で マーゴーを見つけたのに・・・"
+  },
+  {
+    "source": "MARCUS: Okay.",
+    "reference": "-",
+    "sentence_eng_Latn": "MARCUS: Okay.",
+    "sentence_jpn_Jpan": "-"
+  },
+  {
+    "source": "Seven",
+    "reference": "七",
+    "sentence_eng_Latn": "Seven",
+    "sentence_jpn_Jpan": "七"
+  },
+  {
+    "source": "Watch this!",
+    "reference": "これを見て！",
+    "sentence_eng_Latn": "Watch this!",
+    "sentence_jpn_Jpan": "これを見て！"
+  },
+  {
+    "source": "Hannibal influenced me to murder my patient, our patient.",
+    "reference": "ハンニバルの影響で 私は私の患者を、 私達の患者を殺した。",
+    "sentence_eng_Latn": "Hannibal influenced me to murder my patient, our patient.",
+    "sentence_jpn_Jpan": "ハンニバルの影響で 私は私の患者を、 私達の患者を殺した。"
+  },
+  {
+    "source": "Why do you have a personalized box cutter?",
+    "reference": "ランザーさん　お尋ねしますが なぜ　自分専用の カッターナイフがあるんです？",
+    "sentence_eng_Latn": "Why do you have a personalized box cutter?",
+    "sentence_jpn_Jpan": "ランザーさん　お尋ねしますが なぜ　自分専用の カッターナイフがあるんです？"
+  },
+  {
+    "source": "Come here. Come here.",
+    "reference": "ほら こっち来い",
+    "sentence_eng_Latn": "Come here. Come here.",
+    "sentence_jpn_Jpan": "ほら こっち来い"
+  },
+  {
+    "source": "Mmm...",
+    "reference": "えー...",
+    "sentence_eng_Latn": "Mmm...",
+    "sentence_jpn_Jpan": "えー..."
+  },
+  {
+    "source": "Molly? !",
+    "reference": "- モリー？",
+    "sentence_eng_Latn": "Molly? !",
+    "sentence_jpn_Jpan": "- モリー？"
+  },
+  {
+    "source": "Where you are",
+    "reference": "Where you are",
+    "sentence_eng_Latn": "Where you are",
+    "sentence_jpn_Jpan": "Where you are"
+  },
+  {
+    "source": "of Pan",
+    "reference": "PanCoptic month 11 - ShortNamePossessive",
+    "sentence_eng_Latn": "of Pan",
+    "sentence_jpn_Jpan": "PanCoptic month 11 - ShortNamePossessive"
+  },
+  {
+    "source": "All right.",
+    "reference": "よし",
+    "sentence_eng_Latn": "All right.",
+    "sentence_jpn_Jpan": "よし"
+  },
+  {
+    "source": "- I want to talk to him.",
+    "reference": "- 彼と話したい",
+    "sentence_eng_Latn": "- I want to talk to him.",
+    "sentence_jpn_Jpan": "- 彼と話したい"
+  },
+  {
+    "source": "Steady.",
+    "reference": "落ち着け",
+    "sentence_eng_Latn": "Steady.",
+    "sentence_jpn_Jpan": "落ち着け"
+  },
+  {
+    "source": "These?",
+    "reference": "これ？",
+    "sentence_eng_Latn": "These?",
+    "sentence_jpn_Jpan": "これ？"
+  },
+  {
+    "source": "The King in the North arises.",
+    "reference": "北の王が立ち上がるぞ",
+    "sentence_eng_Latn": "The King in the North arises.",
+    "sentence_jpn_Jpan": "北の王が立ち上がるぞ"
+  },
+  {
+    "source": "Watch yourselves!",
+    "reference": "あぶないぞ",
+    "sentence_eng_Latn": "Watch yourselves!",
+    "sentence_jpn_Jpan": "あぶないぞ"
+  },
+  {
+    "source": "- I didn't.",
+    "reference": "- 納得いかん",
+    "sentence_eng_Latn": "- I didn't.",
+    "sentence_jpn_Jpan": "- 納得いかん"
+  },
+  {
+    "source": "Watch your fingers!",
+    "reference": "手元に気をつけて！",
+    "sentence_eng_Latn": "Watch your fingers!",
+    "sentence_jpn_Jpan": "手元に気をつけて！"
+  },
+  {
+    "source": "Just like old times, pretty.",
+    "reference": "見覚えが？",
+    "sentence_eng_Latn": "Just like old times, pretty.",
+    "sentence_jpn_Jpan": "見覚えが？"
+  },
+  {
+    "source": "Ian!",
+    "reference": "イアン",
+    "sentence_eng_Latn": "Ian!",
+    "sentence_jpn_Jpan": "イアン"
+  },
+  {
+    "source": "Mauritania",
+    "reference": "モーリタニアworld.kgm",
+    "sentence_eng_Latn": "Mauritania",
+    "sentence_jpn_Jpan": "モーリタニアworld.kgm"
+  },
+  {
+    "source": "– How far he git off property?",
+    "reference": "逃げた距離は？",
+    "sentence_eng_Latn": "– How far he git off property?",
+    "sentence_jpn_Jpan": "逃げた距離は？"
+  },
+  {
+    "source": "He's lovely.",
+    "reference": "可愛いのよ・・・",
+    "sentence_eng_Latn": "He's lovely.",
+    "sentence_jpn_Jpan": "可愛いのよ・・・"
+  },
+  {
+    "source": "And if you leave this place that knowledge is gonna eat you alive from the inside out until you decide to come back.",
+    "reference": "島を離れてしまったら その考えが君を内側から 食ってしまうぞ ここに戻ってくるまでな",
+    "sentence_eng_Latn": "And if you leave this place that knowledge is gonna eat you alive from the inside out until you decide to come back.",
+    "sentence_jpn_Jpan": "島を離れてしまったら その考えが君を内側から 食ってしまうぞ ここに戻ってくるまでな"
+  },
+  {
+    "source": "- I don't know.",
+    "reference": "- わからない",
+    "sentence_eng_Latn": "- I don't know.",
+    "sentence_jpn_Jpan": "- わからない"
+  },
+  {
+    "source": "Please help me.",
+    "reference": "お願い　助けて",
+    "sentence_eng_Latn": "Please help me.",
+    "sentence_jpn_Jpan": "お願い　助けて"
+  },
+  {
+    "source": "Get the fuck out!",
+    "reference": "出て行け",
+    "sentence_eng_Latn": "Get the fuck out!",
+    "sentence_jpn_Jpan": "出て行け"
+  },
+  {
+    "source": "The things people will do for money.",
+    "reference": "カネの亡者だな",
+    "sentence_eng_Latn": "The things people will do for money.",
+    "sentence_jpn_Jpan": "カネの亡者だな"
+  },
+  {
+    "source": "There's no end in sight.",
+    "reference": "Zumaniに終わりは ありません",
+    "sentence_eng_Latn": "There's no end in sight.",
+    "sentence_jpn_Jpan": "Zumaniに終わりは ありません"
+  },
+  {
+    "source": "You know, it was a charming evening, but, uh, that dead body in your bathtub is going to start putting off some very noxious odors soon.",
+    "reference": "でもバスタブの死体は すぐに不快な臭いを 放ち始めるわ",
+    "sentence_eng_Latn": "You know, it was a charming evening, but, uh, that dead body in your bathtub is going to start putting off some very noxious odors soon.",
+    "sentence_jpn_Jpan": "でもバスタブの死体は すぐに不快な臭いを 放ち始めるわ"
+  },
+  {
+    "source": "My questions are only gonna get tougher here.",
+    "reference": "今の状況を考えろ",
+    "sentence_eng_Latn": "My questions are only gonna get tougher here.",
+    "sentence_jpn_Jpan": "今の状況を考えろ"
+  },
+  {
+    "source": "Texting you Cyrillic icon now.",
+    "reference": "ロシア文字で表示してやる",
+    "sentence_eng_Latn": "Texting you Cyrillic icon now.",
+    "sentence_jpn_Jpan": "ロシア文字で表示してやる"
+  },
+  {
+    "source": "- Wait a minute.",
+    "reference": "- ちょっと待ってくれ",
+    "sentence_eng_Latn": "- Wait a minute.",
+    "sentence_jpn_Jpan": "- ちょっと待ってくれ"
+  },
+  {
+    "source": "Since my first week at the office.",
+    "reference": "最初に会った時からよ",
+    "sentence_eng_Latn": "Since my first week at the office.",
+    "sentence_jpn_Jpan": "最初に会った時からよ"
+  },
+  {
+    "source": "I survived that. This ain't shit.",
+    "reference": "飛行機にいれば生き残る 冗談じゃねえ",
+    "sentence_eng_Latn": "I survived that. This ain't shit.",
+    "sentence_jpn_Jpan": "飛行機にいれば生き残る 冗談じゃねえ"
+  },
+  {
+    "source": "Straightaway.",
+    "reference": "すぐに行きます",
+    "sentence_eng_Latn": "Straightaway.",
+    "sentence_jpn_Jpan": "すぐに行きます"
+  },
+  {
+    "source": "I speak from experience.",
+    "reference": "経験談から話してる",
+    "sentence_eng_Latn": "I speak from experience.",
+    "sentence_jpn_Jpan": "経験談から話してる"
+  },
+  {
+    "source": "No Limit",
+    "reference": "制限なし",
+    "sentence_eng_Latn": "No Limit",
+    "sentence_jpn_Jpan": "制限なし"
+  },
+  {
+    "source": "Austria.",
+    "reference": "オーストリア",
+    "sentence_eng_Latn": "Austria.",
+    "sentence_jpn_Jpan": "オーストリア"
+  },
+  {
+    "source": "Since she was little more than a child.",
+    "reference": "彼女がまだ子供の時からだ",
+    "sentence_eng_Latn": "Since she was little more than a child.",
+    "sentence_jpn_Jpan": "彼女がまだ子供の時からだ"
+  },
+  {
+    "source": "- Excuse me, the DEA?",
+    "reference": "ＤＥＡとは？",
+    "sentence_eng_Latn": "- Excuse me, the DEA?",
+    "sentence_jpn_Jpan": "ＤＥＡとは？"
+  },
+  {
+    "source": "Come on.",
+    "reference": "行きましょう",
+    "sentence_eng_Latn": "Come on.",
+    "sentence_jpn_Jpan": "行きましょう"
+  },
+  {
+    "source": "The psychological strain requires someone emotionally balanced.",
+    "reference": "心理的にバランスの取れた 者はいないのか",
+    "sentence_eng_Latn": "The psychological strain requires someone emotionally balanced.",
+    "sentence_jpn_Jpan": "心理的にバランスの取れた 者はいないのか"
+  }
+]

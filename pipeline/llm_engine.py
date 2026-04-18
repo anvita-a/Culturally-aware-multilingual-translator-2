@@ -115,10 +115,10 @@ def _call_groq(prompt: str, max_tokens: int) -> str:
 
 def _call_llm(prompt: str, max_tokens: int = 1500) -> tuple[str, str]:
     attempts = [
+        ("groq-llama-3.3",   lambda: _call_groq(prompt, max_tokens)),
         ("gemini-1.5-flash", lambda: _call_gemini(prompt, max_tokens)),
         ("gpt-4o-mini",      lambda: _call_openai(prompt, max_tokens, "gpt-4o-mini")),
         ("gpt-3.5-turbo",    lambda: _call_openai(prompt, max_tokens, "gpt-3.5-turbo")),
-        ("groq-llama-3.3",   lambda: _call_groq(prompt, max_tokens)),
     ]
     last_error = None
     for model_name, caller in attempts:
@@ -524,7 +524,7 @@ def translate(
         try:
             logger.info(f"Translation attempt {attempt}/{MAX_RETRIES}")
             current_prompt = main_prompt if attempt == 1 else fallback_prompt
-            raw_text, model_used = _call_llm(current_prompt, max_tokens=1500)
+            raw_text, model_used = _call_llm(current_prompt, max_tokens=2500)
 
             data = _parse_response(raw_text)
             data = _fill_missing_fields(data, context)

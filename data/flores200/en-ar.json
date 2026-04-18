@@ -1,0 +1,602 @@
+[
+  {
+    "source": "Yes, I did. Which means there's no commission in this for you.",
+    "reference": "تماماً ممّا يعني لا عمولة لك",
+    "sentence_eng_Latn": "Yes, I did. Which means there's no commission in this for you.",
+    "sentence_arb_Arab": "تماماً ممّا يعني لا عمولة لك"
+  },
+  {
+    "source": "That's it.",
+    "reference": "هذا كل شيء",
+    "sentence_eng_Latn": "That's it.",
+    "sentence_arb_Arab": "هذا كل شيء"
+  },
+  {
+    "source": "-How are you doing?",
+    "reference": "- كيف تَعْملُ؟",
+    "sentence_eng_Latn": "-How are you doing?",
+    "sentence_arb_Arab": "- كيف تَعْملُ؟"
+  },
+  {
+    "source": "How do you figure that?",
+    "reference": "كيف عرفت هذا؟",
+    "sentence_eng_Latn": "How do you figure that?",
+    "sentence_arb_Arab": "كيف عرفت هذا؟"
+  },
+  {
+    "source": "Okay.",
+    "reference": "حسناً ، أنت بخير",
+    "sentence_eng_Latn": "Okay.",
+    "sentence_arb_Arab": "حسناً ، أنت بخير"
+  },
+  {
+    "source": "Victor!",
+    "reference": "-فيكتور) )!",
+    "sentence_eng_Latn": "Victor!",
+    "sentence_arb_Arab": "-فيكتور) )!"
+  },
+  {
+    "source": "What happened?",
+    "reference": "ماذا حدث؟",
+    "sentence_eng_Latn": "What happened?",
+    "sentence_arb_Arab": "ماذا حدث؟"
+  },
+  {
+    "source": "♪ No relief ♪ We could stop right now if you want.",
+    "reference": "يمكننا أن نتوقف الآن إن أردتِ.",
+    "sentence_eng_Latn": "♪ No relief ♪ We could stop right now if you want.",
+    "sentence_arb_Arab": "يمكننا أن نتوقف الآن إن أردتِ."
+  },
+  {
+    "source": "I see it.",
+    "reference": "أتفهم ذلك",
+    "sentence_eng_Latn": "I see it.",
+    "sentence_arb_Arab": "أتفهم ذلك"
+  },
+  {
+    "source": "Anytime?",
+    "reference": "أي وقت ؟",
+    "sentence_eng_Latn": "Anytime?",
+    "sentence_arb_Arab": "أي وقت ؟"
+  },
+  {
+    "source": "Contend not on behalf of such as betray their own souls ; for Allah loveth not one given to perfidy and crime :",
+    "reference": "ولا تدافع عن الذين يخونون أنفسهم بمعصية الله . إن الله -سبحانه- لا يحب مَن عَظُمَتْ خيانته ، وكثر ذنبه .",
+    "sentence_eng_Latn": "Contend not on behalf of such as betray their own souls ; for Allah loveth not one given to perfidy and crime :",
+    "sentence_arb_Arab": "ولا تدافع عن الذين يخونون أنفسهم بمعصية الله . إن الله -سبحانه- لا يحب مَن عَظُمَتْ خيانته ، وكثر ذنبه ."
+  },
+  {
+    "source": "Oh, shit!",
+    "reference": "اللعنة!",
+    "sentence_eng_Latn": "Oh, shit!",
+    "sentence_arb_Arab": "اللعنة!"
+  },
+  {
+    "source": "Excuse me.",
+    "reference": "-اَسف",
+    "sentence_eng_Latn": "Excuse me.",
+    "sentence_arb_Arab": "-اَسف"
+  },
+  {
+    "source": "Lou, please, Don't do that.",
+    "reference": "أرجوك لا تفعل هذا",
+    "sentence_eng_Latn": "Lou, please, Don't do that.",
+    "sentence_arb_Arab": "أرجوك لا تفعل هذا"
+  },
+  {
+    "source": "Someplace nice, like a beautiful beach, or like a mountain, or...",
+    "reference": "مثل شاطئ جميل أو جبل",
+    "sentence_eng_Latn": "Someplace nice, like a beautiful beach, or like a mountain, or...",
+    "sentence_arb_Arab": "مثل شاطئ جميل أو جبل"
+  },
+  {
+    "source": "Grams?",
+    "reference": "جدتي ؟",
+    "sentence_eng_Latn": "Grams?",
+    "sentence_arb_Arab": "جدتي ؟"
+  },
+  {
+    "source": "It's been a while.",
+    "reference": "لقد مضت فترة",
+    "sentence_eng_Latn": "It's been a while.",
+    "sentence_arb_Arab": "لقد مضت فترة"
+  },
+  {
+    "source": "No?",
+    "reference": "لا أعلم",
+    "sentence_eng_Latn": "No?",
+    "sentence_arb_Arab": "لا أعلم"
+  },
+  {
+    "source": "She just left.",
+    "reference": "غادرت فقط",
+    "sentence_eng_Latn": "She just left.",
+    "sentence_arb_Arab": "غادرت فقط"
+  },
+  {
+    "source": "Oh, God.",
+    "reference": "يالهي",
+    "sentence_eng_Latn": "Oh, God.",
+    "sentence_arb_Arab": "يالهي"
+  },
+  {
+    "source": "We were sure the government was gonna show up on our doorstep but no one ever came.",
+    "reference": "كنا على يقين من أن الحكومة ستظهر على عتبة دارنا. لكن، لم يأتِ أحدٌ قط.",
+    "sentence_eng_Latn": "We were sure the government was gonna show up on our doorstep but no one ever came.",
+    "sentence_arb_Arab": "كنا على يقين من أن الحكومة ستظهر على عتبة دارنا. لكن، لم يأتِ أحدٌ قط."
+  },
+  {
+    "source": "I hope so.",
+    "reference": "آمل ذلك",
+    "sentence_eng_Latn": "I hope so.",
+    "sentence_arb_Arab": "آمل ذلك"
+  },
+  {
+    "source": "Right, Master.",
+    "reference": "صحيح , سيدي",
+    "sentence_eng_Latn": "Right, Master.",
+    "sentence_arb_Arab": "صحيح , سيدي"
+  },
+  {
+    "source": "There's more than that.",
+    "reference": "هنالك المزيد",
+    "sentence_eng_Latn": "There's more than that.",
+    "sentence_arb_Arab": "هنالك المزيد"
+  },
+  {
+    "source": "Here we go.",
+    "reference": "ها نحن أولاء",
+    "sentence_eng_Latn": "Here we go.",
+    "sentence_arb_Arab": "ها نحن أولاء"
+  },
+  {
+    "source": "I'm not sure I can.",
+    "reference": "لا أقدر",
+    "sentence_eng_Latn": "I'm not sure I can.",
+    "sentence_arb_Arab": "لا أقدر"
+  },
+  {
+    "source": "Your daughter? Yes.",
+    "reference": "ابنتك؟",
+    "sentence_eng_Latn": "Your daughter? Yes.",
+    "sentence_arb_Arab": "ابنتك؟"
+  },
+  {
+    "source": "Nowhere.",
+    "reference": "ليس في أي مكان.",
+    "sentence_eng_Latn": "Nowhere.",
+    "sentence_arb_Arab": "ليس في أي مكان."
+  },
+  {
+    "source": "Which reminds me.",
+    "reference": "وهذا يذكرني ..",
+    "sentence_eng_Latn": "Which reminds me.",
+    "sentence_arb_Arab": "وهذا يذكرني .."
+  },
+  {
+    "source": "I'm here!",
+    "reference": "أنا هنا",
+    "sentence_eng_Latn": "I'm here!",
+    "sentence_arb_Arab": "أنا هنا"
+  },
+  {
+    "source": "Thank you.",
+    "reference": "-تفضلوا من فضلكم -شكراً",
+    "sentence_eng_Latn": "Thank you.",
+    "sentence_arb_Arab": "-تفضلوا من فضلكم -شكراً"
+  },
+  {
+    "source": "You saw her?",
+    "reference": "هل رأيتها؟",
+    "sentence_eng_Latn": "You saw her?",
+    "sentence_arb_Arab": "هل رأيتها؟"
+  },
+  {
+    "source": "Uh, I gotta go.",
+    "reference": "علي الذهاب.",
+    "sentence_eng_Latn": "Uh, I gotta go.",
+    "sentence_arb_Arab": "علي الذهاب."
+  },
+  {
+    "source": "Kirk.",
+    "reference": "خير، كيرك!",
+    "sentence_eng_Latn": "Kirk.",
+    "sentence_arb_Arab": "خير، كيرك!"
+  },
+  {
+    "source": "Seriously?",
+    "reference": "حقا ؟",
+    "sentence_eng_Latn": "Seriously?",
+    "sentence_arb_Arab": "حقا ؟"
+  },
+  {
+    "source": "Maybe... I should go up there.",
+    "reference": "ربما عليّ الذهاب إلى هناك",
+    "sentence_eng_Latn": "Maybe... I should go up there.",
+    "sentence_arb_Arab": "ربما عليّ الذهاب إلى هناك"
+  },
+  {
+    "source": "Tagged as Lassen?",
+    "reference": "موسمة كـ(لاسن)؟",
+    "sentence_eng_Latn": "Tagged as Lassen?",
+    "sentence_arb_Arab": "موسمة كـ(لاسن)؟"
+  },
+  {
+    "source": "It is God who has made the night for you to rest and has filled the day with light ( as a means of visibility ) . In this there is evidence ( of the existence of God ) for the people who hear .",
+    "reference": "هو الذي جعل لكم -أيها الناس- الليل لتسكنوا فيه وتهدؤوا من عناء الحركة في طلب المعاش ، وجعل لكم النهار ؛ لتبصروا فيه ، ولتسعَوْا لطلب رزقكم . إن في اختلاف الليل والنهار وحال أهلهما فيهما لَدلالةً وحججًا على أن الله وحده هو المستحق للعبادة ، لقوم يسمعون هذه الحجج ، ويتفكرون فيها .",
+    "sentence_eng_Latn": "It is God who has made the night for you to rest and has filled the day with light ( as a means of visibility ) . In this there is evidence ( of the existence of God ) for the people who hear .",
+    "sentence_arb_Arab": "هو الذي جعل لكم -أيها الناس- الليل لتسكنوا فيه وتهدؤوا من عناء الحركة في طلب المعاش ، وجعل لكم النهار ؛ لتبصروا فيه ، ولتسعَوْا لطلب رزقكم . إن في اختلاف الليل والنهار وحال أهلهما فيهما لَدلالةً وحججًا على أن الله وحده هو المستحق للعبادة ، لقوم يسمعون هذه الحجج ، ويتفكرون فيها ."
+  },
+  {
+    "source": "Okay?",
+    "reference": "حسناً؟",
+    "sentence_eng_Latn": "Okay?",
+    "sentence_arb_Arab": "حسناً؟"
+  },
+  {
+    "source": "Exactly.",
+    "reference": "بالضبط.",
+    "sentence_eng_Latn": "Exactly.",
+    "sentence_arb_Arab": "بالضبط."
+  },
+  {
+    "source": "What happened out there?",
+    "reference": "ما الذي حدث هناك؟",
+    "sentence_eng_Latn": "What happened out there?",
+    "sentence_arb_Arab": "ما الذي حدث هناك؟"
+  },
+  {
+    "source": "Please.",
+    "reference": "من فضلك",
+    "sentence_eng_Latn": "Please.",
+    "sentence_arb_Arab": "من فضلك"
+  },
+  {
+    "source": "God will watch your conduct and so will His Messenger and the believers . Soon you will be brought back to Him who knows what is hidden and what is manifest : then He will show you the truth of all that you have done . \"",
+    "reference": "« وقل » لهم أو للناس « اعملوا » ما شئتم « فسيرى الله عملكم ورسوله والمؤمنون وستردون » بالبعث « إلى عالم الغيب والشهادة » أي الله « فينبئكم بما كنتم تعملون » فيجازيكم به .",
+    "sentence_eng_Latn": "God will watch your conduct and so will His Messenger and the believers . Soon you will be brought back to Him who knows what is hidden and what is manifest : then He will show you the truth of all that you have done . \"",
+    "sentence_arb_Arab": "« وقل » لهم أو للناس « اعملوا » ما شئتم « فسيرى الله عملكم ورسوله والمؤمنون وستردون » بالبعث « إلى عالم الغيب والشهادة » أي الله « فينبئكم بما كنتم تعملون » فيجازيكم به ."
+  },
+  {
+    "source": "Excuse me?",
+    "reference": "عفواً ؟",
+    "sentence_eng_Latn": "Excuse me?",
+    "sentence_arb_Arab": "عفواً ؟"
+  },
+  {
+    "source": "You're mean.",
+    "reference": "أنت لئيم",
+    "sentence_eng_Latn": "You're mean.",
+    "sentence_arb_Arab": "أنت لئيم"
+  },
+  {
+    "source": "- Would you mind?",
+    "reference": "-هل تمانع؟",
+    "sentence_eng_Latn": "- Would you mind?",
+    "sentence_arb_Arab": "-هل تمانع؟"
+  },
+  {
+    "source": "- Easily.",
+    "reference": "بسهولة",
+    "sentence_eng_Latn": "- Easily.",
+    "sentence_arb_Arab": "بسهولة"
+  },
+  {
+    "source": "I have no idea.",
+    "reference": "ليس لدي فكرة",
+    "sentence_eng_Latn": "I have no idea.",
+    "sentence_arb_Arab": "ليس لدي فكرة"
+  },
+  {
+    "source": "Get up!",
+    "reference": "انهض !",
+    "sentence_eng_Latn": "Get up!",
+    "sentence_arb_Arab": "انهض !"
+  },
+  {
+    "source": "It's important.",
+    "reference": "إنه مهم",
+    "sentence_eng_Latn": "It's important.",
+    "sentence_arb_Arab": "إنه مهم"
+  },
+  {
+    "source": "Ooh, I just found something.",
+    "reference": "لقد وجدت شيئاً",
+    "sentence_eng_Latn": "Ooh, I just found something.",
+    "sentence_arb_Arab": "لقد وجدت شيئاً"
+  },
+  {
+    "source": "Men.",
+    "reference": "يا للرجال",
+    "sentence_eng_Latn": "Men.",
+    "sentence_arb_Arab": "يا للرجال"
+  },
+  {
+    "source": "No. No.",
+    "reference": "لا,لا",
+    "sentence_eng_Latn": "No. No.",
+    "sentence_arb_Arab": "لا,لا"
+  },
+  {
+    "source": "We're clear.",
+    "reference": "المكان آمن.",
+    "sentence_eng_Latn": "We're clear.",
+    "sentence_arb_Arab": "المكان آمن."
+  },
+  {
+    "source": "It's me.",
+    "reference": "انه انا",
+    "sentence_eng_Latn": "It's me.",
+    "sentence_arb_Arab": "انه انا"
+  },
+  {
+    "source": "- I'm warning you.",
+    "reference": "-أنا أحذرك",
+    "sentence_eng_Latn": "- I'm warning you.",
+    "sentence_arb_Arab": "-أنا أحذرك"
+  },
+  {
+    "source": "That's enough.",
+    "reference": "هذا يكفي.",
+    "sentence_eng_Latn": "That's enough.",
+    "sentence_arb_Arab": "هذا يكفي."
+  },
+  {
+    "source": "Ay, mi amor. Wow.",
+    "reference": "أحبّكِ",
+    "sentence_eng_Latn": "Ay, mi amor. Wow.",
+    "sentence_arb_Arab": "أحبّكِ"
+  },
+  {
+    "source": "Help me!",
+    "reference": "ساعدوني!",
+    "sentence_eng_Latn": "Help me!",
+    "sentence_arb_Arab": "ساعدوني!"
+  },
+  {
+    "source": "Hi.",
+    "reference": "مرحباً.",
+    "sentence_eng_Latn": "Hi.",
+    "sentence_arb_Arab": "مرحباً."
+  },
+  {
+    "source": "It's hard to tell if he's father Christmas or father time.",
+    "reference": "من الصعب القول إذا كان أب عيد الميلاد أو أب كل الأوقات",
+    "sentence_eng_Latn": "It's hard to tell if he's father Christmas or father time.",
+    "sentence_arb_Arab": "من الصعب القول إذا كان أب عيد الميلاد أو أب كل الأوقات"
+  },
+  {
+    "source": "- OK.",
+    "reference": "-حاضر",
+    "sentence_eng_Latn": "- OK.",
+    "sentence_arb_Arab": "-حاضر"
+  },
+  {
+    "source": "Yeah?",
+    "reference": "نعم?",
+    "sentence_eng_Latn": "Yeah?",
+    "sentence_arb_Arab": "نعم?"
+  },
+  {
+    "source": "Shane.",
+    "reference": "شين",
+    "sentence_eng_Latn": "Shane.",
+    "sentence_arb_Arab": "شين"
+  },
+  {
+    "source": "How?",
+    "reference": "كيف ؟",
+    "sentence_eng_Latn": "How?",
+    "sentence_arb_Arab": "كيف ؟"
+  },
+  {
+    "source": "No...",
+    "reference": "كلا...",
+    "sentence_eng_Latn": "No...",
+    "sentence_arb_Arab": "كلا..."
+  },
+  {
+    "source": "- No, I'm not.",
+    "reference": "-لا لست كذلك",
+    "sentence_eng_Latn": "- No, I'm not.",
+    "sentence_arb_Arab": "-لا لست كذلك"
+  },
+  {
+    "source": "Their eyes close, their lips stretch.",
+    "reference": "عيونهم تغلق,تتمدد شفاههمتَمتدُّ...",
+    "sentence_eng_Latn": "Their eyes close, their lips stretch.",
+    "sentence_arb_Arab": "عيونهم تغلق,تتمدد شفاههمتَمتدُّ..."
+  },
+  {
+    "source": "- Fuck me?",
+    "reference": "-",
+    "sentence_eng_Latn": "- Fuck me?",
+    "sentence_arb_Arab": "-"
+  },
+  {
+    "source": "It's late.",
+    "reference": "مع السلامه",
+    "sentence_eng_Latn": "It's late.",
+    "sentence_arb_Arab": "مع السلامه"
+  },
+  {
+    "source": "There.",
+    "reference": "هناك.",
+    "sentence_eng_Latn": "There.",
+    "sentence_arb_Arab": "هناك."
+  },
+  {
+    "source": "Here!",
+    "reference": "ناقل الحركة و مكابح السرعة",
+    "sentence_eng_Latn": "Here!",
+    "sentence_arb_Arab": "ناقل الحركة و مكابح السرعة"
+  },
+  {
+    "source": "- David.",
+    "reference": "-ديفيد -ماذا؟",
+    "sentence_eng_Latn": "- David.",
+    "sentence_arb_Arab": "-ديفيد -ماذا؟"
+  },
+  {
+    "source": "But you just keep talking, sweetie.",
+    "reference": "لكن لا تتوقف عن الحديث ياعزيزي",
+    "sentence_eng_Latn": "But you just keep talking, sweetie.",
+    "sentence_arb_Arab": "لكن لا تتوقف عن الحديث ياعزيزي"
+  },
+  {
+    "source": "Andrea.",
+    "reference": "(أندريا)",
+    "sentence_eng_Latn": "Andrea.",
+    "sentence_arb_Arab": "(أندريا)"
+  },
+  {
+    "source": "You're just wasting time.",
+    "reference": "أنتِ تضيعين الوقت فحسب",
+    "sentence_eng_Latn": "You're just wasting time.",
+    "sentence_arb_Arab": "أنتِ تضيعين الوقت فحسب"
+  },
+  {
+    "source": "This is weird.",
+    "reference": "هذا غريب",
+    "sentence_eng_Latn": "This is weird.",
+    "sentence_arb_Arab": "هذا غريب"
+  },
+  {
+    "source": "I think I've had enough French culture for one evening.",
+    "reference": "أعتقد لقد كان ما يكفي من الثقافة الفرنسية ليلة واحدة.",
+    "sentence_eng_Latn": "I think I've had enough French culture for one evening.",
+    "sentence_arb_Arab": "أعتقد لقد كان ما يكفي من الثقافة الفرنسية ليلة واحدة."
+  },
+  {
+    "source": "Jack.",
+    "reference": "هكذا هو (جاك",
+    "sentence_eng_Latn": "Jack.",
+    "sentence_arb_Arab": "هكذا هو (جاك"
+  },
+  {
+    "source": "Yeah...",
+    "reference": "نعم ...",
+    "sentence_eng_Latn": "Yeah...",
+    "sentence_arb_Arab": "نعم ..."
+  },
+  {
+    "source": "- All right.",
+    "reference": "- حسنا.",
+    "sentence_eng_Latn": "- All right.",
+    "sentence_arb_Arab": "- حسنا."
+  },
+  {
+    "source": "I'm not sure.",
+    "reference": "لم أقرر بعد",
+    "sentence_eng_Latn": "I'm not sure.",
+    "sentence_arb_Arab": "لم أقرر بعد"
+  },
+  {
+    "source": "- What? No.",
+    "reference": "-ماذا؟",
+    "sentence_eng_Latn": "- What? No.",
+    "sentence_arb_Arab": "-ماذا؟"
+  },
+  {
+    "source": "What now?",
+    "reference": ". ماذا , الان ؟",
+    "sentence_eng_Latn": "What now?",
+    "sentence_arb_Arab": ". ماذا , الان ؟"
+  },
+  {
+    "source": "Come in.",
+    "reference": "ادخل.",
+    "sentence_eng_Latn": "Come in.",
+    "sentence_arb_Arab": "ادخل."
+  },
+  {
+    "source": "What do we do now?",
+    "reference": "ماذا سنفعل الآن؟",
+    "sentence_eng_Latn": "What do we do now?",
+    "sentence_arb_Arab": "ماذا سنفعل الآن؟"
+  },
+  {
+    "source": "You stay here.",
+    "reference": "ابقَ هُنا.",
+    "sentence_eng_Latn": "You stay here.",
+    "sentence_arb_Arab": "ابقَ هُنا."
+  },
+  {
+    "source": "I'm okay.",
+    "reference": "أنا بخير.",
+    "sentence_eng_Latn": "I'm okay.",
+    "sentence_arb_Arab": "أنا بخير."
+  },
+  {
+    "source": "Here we go.",
+    "reference": "ها نحن",
+    "sentence_eng_Latn": "Here we go.",
+    "sentence_arb_Arab": "ها نحن"
+  },
+  {
+    "source": "- Really?",
+    "reference": "-بربك ؟",
+    "sentence_eng_Latn": "- Really?",
+    "sentence_arb_Arab": "-بربك ؟"
+  },
+  {
+    "source": "- Send it.",
+    "reference": "؟",
+    "sentence_eng_Latn": "- Send it.",
+    "sentence_arb_Arab": "؟"
+  },
+  {
+    "source": "In the book of Genesis-- What are you, Stepford boy?",
+    "reference": "ماذا أنت , ولد صغير ؟",
+    "sentence_eng_Latn": "In the book of Genesis-- What are you, Stepford boy?",
+    "sentence_arb_Arab": "ماذا أنت , ولد صغير ؟"
+  },
+  {
+    "source": "- Michaelangelo.",
+    "reference": "مايكل أنجلو أجل",
+    "sentence_eng_Latn": "- Michaelangelo.",
+    "sentence_arb_Arab": "مايكل أنجلو أجل"
+  },
+  {
+    "source": "I'm the one with the grenade launcher.",
+    "reference": "أنا الذي أحمل القنابل.",
+    "sentence_eng_Latn": "I'm the one with the grenade launcher.",
+    "sentence_arb_Arab": "أنا الذي أحمل القنابل."
+  },
+  {
+    "source": "What's wrong with you?",
+    "reference": "مابالك هكذا؟",
+    "sentence_eng_Latn": "What's wrong with you?",
+    "sentence_arb_Arab": "مابالك هكذا؟"
+  },
+  {
+    "source": "How did you find me?",
+    "reference": "كيف وجدتني؟",
+    "sentence_eng_Latn": "How did you find me?",
+    "sentence_arb_Arab": "كيف وجدتني؟"
+  },
+  {
+    "source": "Bingo.",
+    "reference": "تمامًا",
+    "sentence_eng_Latn": "Bingo.",
+    "sentence_arb_Arab": "تمامًا"
+  },
+  {
+    "source": "'Night.",
+    "reference": "ليلة سعيدة",
+    "sentence_eng_Latn": "'Night.",
+    "sentence_arb_Arab": "ليلة سعيدة"
+  },
+  {
+    "source": "Excuse me.",
+    "reference": "عذراً",
+    "sentence_eng_Latn": "Excuse me.",
+    "sentence_arb_Arab": "عذراً"
+  },
+  {
+    "source": "Anybody home?",
+    "reference": "هل يوجد أحد هنا ؟",
+    "sentence_eng_Latn": "Anybody home?",
+    "sentence_arb_Arab": "هل يوجد أحد هنا ؟"
+  }
+]

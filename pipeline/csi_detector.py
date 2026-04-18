@@ -197,48 +197,85 @@ def _llm_based_csi(text: str, target_lang: str) -> List[CSISpan]:
     from dotenv import load_dotenv
     load_dotenv()
 
-    api_key = os.getenv("GEMINI_API_KEY")
-    if not api_key:
+    prompt = (
+        f'You are a cultural linguistics expert. Find ALL culture-specific '
+        f'items (CSIs) in this English text that would be challenging to '
+        f'translate into language code "{target_lang}".\n\n'
+        f'Text: "{text}"\n\n'
+        f'Look for:\n'
+        f'- Culturally specific foods (mochi, kimchi, haggis, grits...)\n'
+        f'- Idioms and proverbs that do not translate literally\n'
+        f'- Cultural concepts (karma, hygge, wabi-sabi, face-saving...)\n'
+        f'- Superstitions and beliefs (knock on wood, evil eye...)\n'
+        f'- Direct commands that are inappropriate in high-context cultures\n'
+        f'- Humour, wordplay, puns, or jokes that are language-specific\n'
+        f'- Holidays, festivals, and cultural events\n'
+        f'- Media and popular culture references\n'
+        f'- Institutions or systems specific to one country\n\n'
+        f'Return a JSON array. Each element:\n'
+        f'  span: exact text\n'
+        f'  start: character index (0-based)\n'
+        f'  end: character index where span ends\n'
+        f'  category: "proper_name", "culturally_embedded", '
+        f'"institutional", or "pragmatic"\n'
+        f'  explanation: one sentence why it needs cultural adaptation\n'
+        f'  confidence: float 0-1 (how certain you are this is a CSI)\n\n'
+        f'Only include genuine CSIs with confidence >= 0.7. '
+        f'Do NOT flag individual universal words: time words (tomorrow, today, soon, now), '
+        f'basic verbs (do, make, take, go), basic emotions, numbers, or common objects. '
+        f'DO flag: idioms, proverbs, direct commands inappropriate in high-context cultures, '
+        f'culturally-loaded phrases, and expressions with no equivalent in the target language. '
+        f'ONLY flag items that are genuinely untranslatable or culturally specific. '
+        f'If none, return []. Return ONLY the JSON array.'
+    )
+
+    raw = None
+
+    # Try Groq first
+    groq_key = os.getenv("GROQ_API_KEY")
+    if groq_key:
+        try:
+            from groq import Groq
+            client = Groq(api_key=groq_key)
+            resp = client.chat.completions.create(
+                model="llama-3.3-70b-versatile",
+                max_tokens=512,
+                temperature=0.1,
+                response_format={"type": "json_object"},
+                messages=[
+                    {"role": "system", "content": "You are a cultural linguistics expert. Always respond with a JSON object containing a 'csi_items' array."},
+                    {"role": "user", "content": prompt + "\n\nRespond as: {\"csi_items\": [...array...]}"}
+                ],
+            )
+            data = json.loads(resp.choices[0].message.content)
+            items = data.get("csi_items", data) if isinstance(data, dict) else data
+            raw = json.dumps(items) if isinstance(items, list) else "[]"
+        except Exception as e:
+            logger.debug(f"Groq CSI detection failed: {e}")
+
+    # Try Gemini as fallback
+    if raw is None:
+        api_key = os.getenv("GEMINI_API_KEY")
+        if api_key:
+            try:
+                import google.generativeai as genai
+                genai.configure(api_key=api_key)
+                model = genai.GenerativeModel(
+                    "gemini-1.5-flash",
+                    generation_config=genai.GenerationConfig(
+                        response_mime_type="application/json",
+                        temperature=0.1,
+                    ),
+                )
+                response = model.generate_content(prompt)
+                raw = response.text.strip()
+            except Exception as e:
+                logger.debug(f"Gemini CSI detection failed: {e}")
+
+    if raw is None:
         return []
 
     try:
-        import google.generativeai as genai
-        genai.configure(api_key=api_key)
-
-        prompt = (
-            f'You are a cultural linguistics expert. Find ALL culture-specific '
-            f'items (CSIs) in this English text that would be challenging to '
-            f'translate into language code "{target_lang}".\n\n'
-            f'Text: "{text}"\n\n'
-            f'Look for:\n'
-            f'- Culturally specific foods (mochi, kimchi, haggis, grits...)\n'
-            f'- Idioms and proverbs that do not translate literally\n'
-            f'- Cultural concepts (karma, hygge, wabi-sabi, face-saving...)\n'
-            f'- Superstitions and beliefs (knock on wood, evil eye...)\n'
-            f'- Humour, wordplay, puns, or jokes that are language-specific\n'
-            f'- Holidays, festivals, and cultural events\n'
-            f'- Media and popular culture references\n'
-            f'- Institutions or systems specific to one country\n\n'
-            f'Return a JSON array. Each element:\n'
-            f'  span: exact text\n'
-            f'  start: character index (0-based)\n'
-            f'  end: character index where span ends\n'
-            f'  category: "proper_name", "culturally_embedded", '
-            f'"institutional", or "pragmatic"\n'
-            f'  explanation: one sentence why it needs cultural adaptation\n\n'
-            f'Only include items needing adaptation. '
-            f'If none, return []. Return ONLY the JSON array.'
-        )
-
-        model = genai.GenerativeModel(
-            "gemini-1.5-flash",
-            generation_config=genai.GenerationConfig(
-                response_mime_type="application/json",
-                temperature=0.1,
-            ),
-        )
-        response = model.generate_content(prompt)
-        raw = response.text.strip()
 
         if raw.startswith("["):
             items = json.loads(raw)
@@ -249,6 +286,11 @@ def _llm_based_csi(text: str, target_lang: str) -> List[CSISpan]:
         spans: List[CSISpan] = []
         for item in items:
             if all(k in item for k in ["span","start","end","category","explanation"]):
+                # Filter low-confidence detections
+                confidence = float(item.get("confidence", 1.0))
+                if confidence < 0.7:
+                    logger.debug(f"Skipping low-confidence CSI: {item['span']} ({confidence:.2f})")
+                    continue
                 spans.append({
                     "span":        item["span"],
                     "start":       int(item["start"]),
@@ -256,6 +298,15 @@ def _llm_based_csi(text: str, target_lang: str) -> List[CSISpan]:
                     "category":    item["category"],
                     "explanation": item["explanation"],
                 })
+
+        # Deduplicate by span text
+        seen = set()
+        unique_spans = []
+        for s in spans:
+            if s['span'] not in seen:
+                seen.add(s['span'])
+                unique_spans.append(s)
+        spans = unique_spans
 
         if spans:
             logger.info(f"LLM CSI detection: {len(spans)} additional spans")
@@ -287,11 +338,14 @@ def detect_csi_spans(pipeline_input: PipelineInput) -> List[CSISpan]:
     llm_spans  = _llm_based_csi(text, target_lang)
 
     rule_ranges = {(s["start"], s["end"]) for s in rule_spans}
+    rule_texts  = {s["span"].lower() for s in rule_spans}
     merged = rule_spans.copy()
     for span in llm_spans:
         key = (span["start"], span["end"])
-        if key not in rule_ranges:
+        txt = span["span"].lower()
+        if key not in rule_ranges and txt not in rule_texts:
             merged.append(span)
+            rule_texts.add(txt)
 
     merged.sort(key=lambda s: s["start"])
 

@@ -1,0 +1,602 @@
+[
+  {
+    "source": "I'm fine!",
+    "reference": "不用了!",
+    "sentence_eng_Latn": "I'm fine!",
+    "sentence_zho_Hans": "不用了!"
+  },
+  {
+    "source": "\"Hey, handsome man, let's go undercover.",
+    "reference": "喂，帅男帅男，来玩卧底游戏 \"Hey, handsome man, let's go undercover.",
+    "sentence_eng_Latn": "\"Hey, handsome man, let's go undercover.",
+    "sentence_zho_Hans": "喂，帅男帅男，来玩卧底游戏 \"Hey, handsome man, let's go undercover."
+  },
+  {
+    "source": "Are you OK?",
+    "reference": "没事吧？",
+    "sentence_eng_Latn": "Are you OK?",
+    "sentence_zho_Hans": "没事吧？"
+  },
+  {
+    "source": "- Did you notice?",
+    "reference": "- 你聽出來了嗎？",
+    "sentence_eng_Latn": "- Did you notice?",
+    "sentence_zho_Hans": "- 你聽出來了嗎？"
+  },
+  {
+    "source": "If current estimates are correct, around 10% of users (andone in six who start in adolescence) may become dependent onmarijuana – that is, find it difficult to control or discontinuetheir use. A minority of these problem users will seek professionalhelp to quit.",
+    "reference": "如果目前的估计是正确的话，大概有10%的使用者（其中1/6在青少年时期就开始吸食）将发展为大麻成瘾——这意味着他们将难以自我控制或者戒除大麻。而其中只有一小部分会寻求专业人士的帮助。",
+    "sentence_eng_Latn": "If current estimates are correct, around 10% of users (andone in six who start in adolescence) may become dependent onmarijuana – that is, find it difficult to control or discontinuetheir use. A minority of these problem users will seek professionalhelp to quit.",
+    "sentence_zho_Hans": "如果目前的估计是正确的话，大概有10%的使用者（其中1/6在青少年时期就开始吸食）将发展为大麻成瘾——这意味着他们将难以自我控制或者戒除大麻。而其中只有一小部分会寻求专业人士的帮助。"
+  },
+  {
+    "source": "Have a drink! Come on!",
+    "reference": "喝一杯吧",
+    "sentence_eng_Latn": "Have a drink! Come on!",
+    "sentence_zho_Hans": "喝一杯吧"
+  },
+  {
+    "source": "And then it didn't rain a drop for a full year.",
+    "reference": "然后那里整年都没有下过一滴雨",
+    "sentence_eng_Latn": "And then it didn't rain a drop for a full year.",
+    "sentence_zho_Hans": "然后那里整年都没有下过一滴雨"
+  },
+  {
+    "source": "You're gonna kill us both.",
+    "reference": "你这样我们都会死的",
+    "sentence_eng_Latn": "You're gonna kill us both.",
+    "sentence_zho_Hans": "你这样我们都会死的"
+  },
+  {
+    "source": "Well, then you probably won't want to be looking at that.",
+    "reference": "那么，你可能不想看这个",
+    "sentence_eng_Latn": "Well, then you probably won't want to be looking at that.",
+    "sentence_zho_Hans": "那么，你可能不想看这个"
+  },
+  {
+    "source": "Yeah? She sleep over yet?",
+    "reference": "是吗 她还是没回来住?",
+    "sentence_eng_Latn": "Yeah? She sleep over yet?",
+    "sentence_zho_Hans": "是吗 她还是没回来住?"
+  },
+  {
+    "source": "- So I'm good?",
+    "reference": "- 那么，通过啦？",
+    "sentence_eng_Latn": "- So I'm good?",
+    "sentence_zho_Hans": "- 那么，通过啦？"
+  },
+  {
+    "source": "You live here?",
+    "reference": "你住这？",
+    "sentence_eng_Latn": "You live here?",
+    "sentence_zho_Hans": "你住这？"
+  },
+  {
+    "source": "Variant 2",
+    "reference": "备选条文2",
+    "sentence_eng_Latn": "Variant 2",
+    "sentence_zho_Hans": "备选条文2"
+  },
+  {
+    "source": "Tell me something, Henry.",
+    "reference": "告诉我一些情况，亨利",
+    "sentence_eng_Latn": "Tell me something, Henry.",
+    "sentence_zho_Hans": "告诉我一些情况，亨利"
+  },
+  {
+    "source": "The Assistant Director, Division for Finance, Budget and Administration, is responsible for the implementation of this recommendation.",
+    "reference": "财务、预算和行政司助理主任负责执行本建议",
+    "sentence_eng_Latn": "The Assistant Director, Division for Finance, Budget and Administration, is responsible for the implementation of this recommendation.",
+    "sentence_zho_Hans": "财务、预算和行政司助理主任负责执行本建议"
+  },
+  {
+    "source": "Walk silently, but let her know you're there.",
+    "reference": "脚步要轻，还不能让小姐听不见",
+    "sentence_eng_Latn": "Walk silently, but let her know you're there.",
+    "sentence_zho_Hans": "脚步要轻，还不能让小姐听不见"
+  },
+  {
+    "source": "At the end of all this,",
+    "reference": "一切结束之后 At the end of all this,",
+    "sentence_eng_Latn": "At the end of all this,",
+    "sentence_zho_Hans": "一切结束之后 At the end of all this,"
+  },
+  {
+    "source": "Now?",
+    "reference": "现在？",
+    "sentence_eng_Latn": "Now?",
+    "sentence_zho_Hans": "现在？"
+  },
+  {
+    "source": "Look, kid, with your record, you're 4F.",
+    "reference": "看吶, 年轻人, 根据你的过往记录, 你已经 4F.",
+    "sentence_eng_Latn": "Look, kid, with your record, you're 4F.",
+    "sentence_zho_Hans": "看吶, 年轻人, 根据你的过往记录, 你已经 4F."
+  },
+  {
+    "source": "Treaties relating to the occasion for resort to armed conflict",
+    "reference": "导致诉诸武装冲突的有关条约",
+    "sentence_eng_Latn": "Treaties relating to the occasion for resort to armed conflict",
+    "sentence_zho_Hans": "导致诉诸武装冲突的有关条约"
+  },
+  {
+    "source": "Sometimes we get to them, there's so many maggots, it looks like a stewpot boiling.",
+    "reference": "有时我们走近了看他们 就看见 很多蛆虫 简直像煮开了的炖锅",
+    "sentence_eng_Latn": "Sometimes we get to them, there's so many maggots, it looks like a stewpot boiling.",
+    "sentence_zho_Hans": "有时我们走近了看他们 就看见 很多蛆虫 简直像煮开了的炖锅"
+  },
+  {
+    "source": "Commission on Population and Development",
+    "reference": "人口与发展委员会",
+    "sentence_eng_Latn": "Commission on Population and Development",
+    "sentence_zho_Hans": "人口与发展委员会"
+  },
+  {
+    "source": "The paragraph should read:",
+    "reference": "该段应为：",
+    "sentence_eng_Latn": "The paragraph should read:",
+    "sentence_zho_Hans": "该段应为："
+  },
+  {
+    "source": "- I'm not testifying!",
+    "reference": "- 我不会去作证的! - 我知道.",
+    "sentence_eng_Latn": "- I'm not testifying!",
+    "sentence_zho_Hans": "- 我不会去作证的! - 我知道."
+  },
+  {
+    "source": "Flowers for the man. l'm none of those things, Ali.",
+    "reference": "我什么都不是，阿里",
+    "sentence_eng_Latn": "Flowers for the man. l'm none of those things, Ali.",
+    "sentence_zho_Hans": "我什么都不是，阿里"
+  },
+  {
+    "source": "The Office of Internal Oversight Services was informed that the Division continues to work consistently with other United Nations agencies to ensure that all issues of sustainable development are covered.",
+    "reference": "10. 监督厅获悉，可持续发展司继续不断地与联合国其他机构合作，确保囊括可持续发展的所有问题。",
+    "sentence_eng_Latn": "The Office of Internal Oversight Services was informed that the Division continues to work consistently with other United Nations agencies to ensure that all issues of sustainable development are covered.",
+    "sentence_zho_Hans": "10. 监督厅获悉，可持续发展司继续不断地与联合国其他机构合作，确保囊括可持续发展的所有问题。"
+  },
+  {
+    "source": "I'm gonna call you later.",
+    "reference": "我会再给你打电话的",
+    "sentence_eng_Latn": "I'm gonna call you later.",
+    "sentence_zho_Hans": "我会再给你打电话的"
+  },
+  {
+    "source": "(Such were the circumstances) when We sent forth Noah to his people. (He said): 'I have been sent to you to warn you plainly",
+    "reference": "我确已派遣努哈去教化他的宗族说：我对你们确是一个坦率的警告者。",
+    "sentence_eng_Latn": "(Such were the circumstances) when We sent forth Noah to his people. (He said): 'I have been sent to you to warn you plainly",
+    "sentence_zho_Hans": "我确已派遣努哈去教化他的宗族说：我对你们确是一个坦率的警告者。"
+  },
+  {
+    "source": "(Agenda item 1)",
+    "reference": "一、会议开幕 (议程项目1)",
+    "sentence_eng_Latn": "(Agenda item 1)",
+    "sentence_zho_Hans": "一、会议开幕 (议程项目1)"
+  },
+  {
+    "source": "What the hell?",
+    "reference": "她一定說我的電子郵箱正來了",
+    "sentence_eng_Latn": "What the hell?",
+    "sentence_zho_Hans": "她一定說我的電子郵箱正來了"
+  },
+  {
+    "source": "(c) The Convention on Nuclear Safety;",
+    "reference": "(c) 《核安全公约》；",
+    "sentence_eng_Latn": "(c) The Convention on Nuclear Safety;",
+    "sentence_zho_Hans": "(c) 《核安全公约》；"
+  },
+  {
+    "source": "I guess - about my future.",
+    "reference": "我想是我的将来吧",
+    "sentence_eng_Latn": "I guess - about my future.",
+    "sentence_zho_Hans": "我想是我的将来吧"
+  },
+  {
+    "source": "Jeez, another one?",
+    "reference": "警察在路边被人一枪毙命 天呐 又出事了",
+    "sentence_eng_Latn": "Jeez, another one?",
+    "sentence_zho_Hans": "警察在路边被人一枪毙命 天呐 又出事了"
+  },
+  {
+    "source": "Do we have to?",
+    "reference": "我们必需要吗？",
+    "sentence_eng_Latn": "Do we have to?",
+    "sentence_zho_Hans": "我们必需要吗？"
+  },
+  {
+    "source": "I don't really know, but I kind of wish I did.",
+    "reference": "我真的不知道 但是有点希望与众不同",
+    "sentence_eng_Latn": "I don't really know, but I kind of wish I did.",
+    "sentence_zho_Hans": "我真的不知道 但是有点希望与众不同"
+  },
+  {
+    "source": "They talked... They were talking to him, then they shot him in the head.",
+    "reference": "先询问，后枪击头部",
+    "sentence_eng_Latn": "They talked... They were talking to him, then they shot him in the head.",
+    "sentence_zho_Hans": "先询问，后枪击头部"
+  },
+  {
+    "source": "The three options described above would obviously have a different impact on the format for future meetings of the CRIC:",
+    "reference": "29. 上述三种备选方案显然对审评委今后会议的形式具有不同影响：",
+    "sentence_eng_Latn": "The three options described above would obviously have a different impact on the format for future meetings of the CRIC:",
+    "sentence_zho_Hans": "29. 上述三种备选方案显然对审评委今后会议的形式具有不同影响："
+  },
+  {
+    "source": "Your patient was flagged a potential risk by the city's",
+    "reference": "你的患者被标示为潜在威胁 Your patient was flagged a potential risk by the city's - 是新的...",
+    "sentence_eng_Latn": "Your patient was flagged a potential risk by the city's",
+    "sentence_zho_Hans": "你的患者被标示为潜在威胁 Your patient was flagged a potential risk by the city's - 是新的..."
+  },
+  {
+    "source": "Every person who chooses... the service of God as his life's work... has something in common.",
+    "reference": "每一个 选择以侍奉神明为终身职责的人都有共同点",
+    "sentence_eng_Latn": "Every person who chooses... the service of God as his life's work... has something in common.",
+    "sentence_zho_Hans": "每一个 选择以侍奉神明为终身职责的人都有共同点"
+  },
+  {
+    "source": "- Good night.",
+    "reference": "-晚安",
+    "sentence_eng_Latn": "- Good night.",
+    "sentence_zho_Hans": "-晚安"
+  },
+  {
+    "source": "The audit was based on the following broad audit objectives, mentioned by the Board in its progress report on the capital master plan (see A/58/321, para.",
+    "reference": "3. 这项审查是依据委员会在其关于基本建设总计划的进度报告中提出的以下广泛审计目标（A/58/321，第2段）进行的：",
+    "sentence_eng_Latn": "The audit was based on the following broad audit objectives, mentioned by the Board in its progress report on the capital master plan (see A/58/321, para.",
+    "sentence_zho_Hans": "3. 这项审查是依据委员会在其关于基本建设总计划的进度报告中提出的以下广泛审计目标（A/58/321，第2段）进行的："
+  },
+  {
+    "source": "Committees",
+    "reference": "大 会",
+    "sentence_eng_Latn": "Committees",
+    "sentence_zho_Hans": "大 会"
+  },
+  {
+    "source": "No!",
+    "reference": "不！",
+    "sentence_eng_Latn": "No!",
+    "sentence_zho_Hans": "不！"
+  },
+  {
+    "source": "Health was another area requiring collective action.",
+    "reference": "15. 保健是另一个需要采取集体行动的领域。",
+    "sentence_eng_Latn": "Health was another area requiring collective action.",
+    "sentence_zho_Hans": "15. 保健是另一个需要采取集体行动的领域。"
+  },
+  {
+    "source": "She lives 10 miles from here, okay? It's my only chance.",
+    "reference": "她家离这里有10英里远 这是我唯一的机会",
+    "sentence_eng_Latn": "She lives 10 miles from here, okay? It's my only chance.",
+    "sentence_zho_Hans": "她家离这里有10英里远 这是我唯一的机会"
+  },
+  {
+    "source": "I got fucking Tiger Balm in my eye.",
+    "reference": "我得到了他妈的虎豹我 眼。",
+    "sentence_eng_Latn": "I got fucking Tiger Balm in my eye.",
+    "sentence_zho_Hans": "我得到了他妈的虎豹我 眼。"
+  },
+  {
+    "source": "- Great!",
+    "reference": "- 好的!",
+    "sentence_eng_Latn": "- Great!",
+    "sentence_zho_Hans": "- 好的!"
+  },
+  {
+    "source": "We were just leaving.",
+    "reference": "我们要走了",
+    "sentence_eng_Latn": "We were just leaving.",
+    "sentence_zho_Hans": "我们要走了"
+  },
+  {
+    "source": "- Oh.",
+    "reference": "-噢",
+    "sentence_eng_Latn": "- Oh.",
+    "sentence_zho_Hans": "-噢"
+  },
+  {
+    "source": "Keep her close, Kee.",
+    "reference": "抱紧她，吉",
+    "sentence_eng_Latn": "Keep her close, Kee.",
+    "sentence_zho_Hans": "抱紧她，吉"
+  },
+  {
+    "source": "I will always remember you my brother",
+    "reference": "我会永远记住我的兄弟",
+    "sentence_eng_Latn": "I will always remember you my brother",
+    "sentence_zho_Hans": "我会永远记住我的兄弟"
+  },
+  {
+    "source": "(Signed) Yashar Aliyev",
+    "reference": "常驻代表",
+    "sentence_eng_Latn": "(Signed) Yashar Aliyev",
+    "sentence_zho_Hans": "常驻代表"
+  },
+  {
+    "source": "Call the ambulance.",
+    "reference": "叫救护车",
+    "sentence_eng_Latn": "Call the ambulance.",
+    "sentence_zho_Hans": "叫救护车"
+  },
+  {
+    "source": "Implementation of the outcome of the Fourth World Conference on Women and of the twenty-third special session of the General Assembly",
+    "reference": "第四次妇女问题世界会议和大会第二十三届特别会议成果的执行情况",
+    "sentence_eng_Latn": "Implementation of the outcome of the Fourth World Conference on Women and of the twenty-third special session of the General Assembly",
+    "sentence_zho_Hans": "第四次妇女问题世界会议和大会第二十三届特别会议成果的执行情况"
+  },
+  {
+    "source": "I give him the floor.",
+    "reference": "我请他发言。",
+    "sentence_eng_Latn": "I give him the floor.",
+    "sentence_zho_Hans": "我请他发言。"
+  },
+  {
+    "source": "Let's go, Father.",
+    "reference": "我们走吧，神父",
+    "sentence_eng_Latn": "Let's go, Father.",
+    "sentence_zho_Hans": "我们走吧，神父"
+  },
+  {
+    "source": "Weapons/Conn:",
+    "reference": "武器室，这里是控制室",
+    "sentence_eng_Latn": "Weapons/Conn:",
+    "sentence_zho_Hans": "武器室，这里是控制室"
+  },
+  {
+    "source": "But if you think you do have rights let me ask you this, where do they come from?",
+    "reference": "但如果你真的认为你有权利 让我问你 从哪来的？",
+    "sentence_eng_Latn": "But if you think you do have rights let me ask you this, where do they come from?",
+    "sentence_zho_Hans": "但如果你真的认为你有权利 让我问你 从哪来的？"
+  },
+  {
+    "source": "You´re grounded, for a week!",
+    "reference": "你被禁足一星期！",
+    "sentence_eng_Latn": "You´re grounded, for a week!",
+    "sentence_zho_Hans": "你被禁足一星期！"
+  },
+  {
+    "source": "I soap with neutral pH.",
+    "reference": "我有PH值为中性的肥皂",
+    "sentence_eng_Latn": "I soap with neutral pH.",
+    "sentence_zho_Hans": "我有PH值为中性的肥皂"
+  },
+  {
+    "source": "Yeah. I got someone stepping off that bird now.",
+    "reference": "我看见有人从飞机上下来",
+    "sentence_eng_Latn": "Yeah. I got someone stepping off that bird now.",
+    "sentence_zho_Hans": "我看见有人从飞机上下来"
+  },
+  {
+    "source": "Money's the world's curse.",
+    "reference": "那就叫上帝拿钱砸我",
+    "sentence_eng_Latn": "Money's the world's curse.",
+    "sentence_zho_Hans": "那就叫上帝拿钱砸我"
+  },
+  {
+    "source": "Have you ever sent yourself a postcard?",
+    "reference": "你自己给自己寄过明信片吗",
+    "sentence_eng_Latn": "Have you ever sent yourself a postcard?",
+    "sentence_zho_Hans": "你自己给自己寄过明信片吗"
+  },
+  {
+    "source": "They shoot first, and then they answer the questions.",
+    "reference": "他们先射击，然后再回答问题",
+    "sentence_eng_Latn": "They shoot first, and then they answer the questions.",
+    "sentence_zho_Hans": "他们先射击，然后再回答问题"
+  },
+  {
+    "source": "To play?",
+    "reference": "是玩具吗？",
+    "sentence_eng_Latn": "To play?",
+    "sentence_zho_Hans": "是玩具吗？"
+  },
+  {
+    "source": "No, that-that is not possible.",
+    "reference": "不,那 -那是不可能的",
+    "sentence_eng_Latn": "No, that-that is not possible.",
+    "sentence_zho_Hans": "不,那 -那是不可能的"
+  },
+  {
+    "source": "The meeting was called to order at 10.40 a.m.",
+    "reference": "上午10时40分开会",
+    "sentence_eng_Latn": "The meeting was called to order at 10.40 a.m.",
+    "sentence_zho_Hans": "上午10时40分开会"
+  },
+  {
+    "source": "Hate's unbecoming in a man like you.",
+    "reference": "仇恨在你这样的男人心中并不显现",
+    "sentence_eng_Latn": "Hate's unbecoming in a man like you.",
+    "sentence_zho_Hans": "仇恨在你这样的男人心中并不显现"
+  },
+  {
+    "source": "He's on the Dukan Diet, so Dadina won't leave him.",
+    "reference": "他正在用杜坎减肥法 所以Dadina不能离开他",
+    "sentence_eng_Latn": "He's on the Dukan Diet, so Dadina won't leave him.",
+    "sentence_zho_Hans": "他正在用杜坎减肥法 所以Dadina不能离开他"
+  },
+  {
+    "source": "But I have made my peace with Ludwig.",
+    "reference": "但我和路丁之间已经了结了。",
+    "sentence_eng_Latn": "But I have made my peace with Ludwig.",
+    "sentence_zho_Hans": "但我和路丁之间已经了结了。"
+  },
+  {
+    "source": "You'll take the next right.",
+    "reference": "下个路口右拐",
+    "sentence_eng_Latn": "You'll take the next right.",
+    "sentence_zho_Hans": "下个路口右拐"
+  },
+  {
+    "source": "Frank--",
+    "reference": "弗兰克－ 哈！ 哈！",
+    "sentence_eng_Latn": "Frank--",
+    "sentence_zho_Hans": "弗兰克－ 哈！ 哈！"
+  },
+  {
+    "source": "What do you need?",
+    "reference": "你需要什么",
+    "sentence_eng_Latn": "What do you need?",
+    "sentence_zho_Hans": "你需要什么"
+  },
+  {
+    "source": "- Hi.",
+    "reference": "-你好",
+    "sentence_eng_Latn": "- Hi.",
+    "sentence_zho_Hans": "-你好"
+  },
+  {
+    "source": "Construction of additional conference facilities at the Vienna International Centre",
+    "reference": "在维也纳国际中心增建会议设施",
+    "sentence_eng_Latn": "Construction of additional conference facilities at the Vienna International Centre",
+    "sentence_zho_Hans": "在维也纳国际中心增建会议设施"
+  },
+  {
+    "source": "Also welcomes the ratification by all original parties of the Treaty of Rarotonga, and calls upon eligible States to adhere to the treaty and the protocols thereto;",
+    "reference": "2. 又欢迎《拉罗通加条约》所有原始缔约方批准该条约，并吁请有资格的国家加入《条约》及其《议定书》；",
+    "sentence_eng_Latn": "Also welcomes the ratification by all original parties of the Treaty of Rarotonga, and calls upon eligible States to adhere to the treaty and the protocols thereto;",
+    "sentence_zho_Hans": "2. 又欢迎《拉罗通加条约》所有原始缔约方批准该条约，并吁请有资格的国家加入《条约》及其《议定书》；"
+  },
+  {
+    "source": "Oh!",
+    "reference": "啊！",
+    "sentence_eng_Latn": "Oh!",
+    "sentence_zho_Hans": "啊！"
+  },
+  {
+    "source": "- That's where you got your scar?",
+    "reference": "- 你的傷疤是從那而來",
+    "sentence_eng_Latn": "- That's where you got your scar?",
+    "sentence_zho_Hans": "- 你的傷疤是從那而來"
+  },
+  {
+    "source": "So I was thinking maybe you could give me some advice, brother to brother.",
+    "reference": "哥哥... 可不可以教我一下？",
+    "sentence_eng_Latn": "So I was thinking maybe you could give me some advice, brother to brother.",
+    "sentence_zho_Hans": "哥哥... 可不可以教我一下？"
+  },
+  {
+    "source": "Bench-presses 350 pounds.",
+    "reference": "仰举350磅重量。",
+    "sentence_eng_Latn": "Bench-presses 350 pounds.",
+    "sentence_zho_Hans": "仰举350磅重量。"
+  },
+  {
+    "source": "- And?",
+    "reference": "结果?",
+    "sentence_eng_Latn": "- And?",
+    "sentence_zho_Hans": "结果?"
+  },
+  {
+    "source": "Baron Francois Toulour.",
+    "reference": "他是个男爵 Baron François Toulour.",
+    "sentence_eng_Latn": "Baron Francois Toulour.",
+    "sentence_zho_Hans": "他是个男爵 Baron François Toulour."
+  },
+  {
+    "source": "He shall say: O! would that I had sent before for (this) my life!",
+    "reference": "他将说：但愿我在世的时候曾行善事。",
+    "sentence_eng_Latn": "He shall say: O! would that I had sent before for (this) my life!",
+    "sentence_zho_Hans": "他将说：但愿我在世的时候曾行善事。"
+  },
+  {
+    "source": "So...",
+    "reference": "所以...",
+    "sentence_eng_Latn": "So...",
+    "sentence_zho_Hans": "所以..."
+  },
+  {
+    "source": "I have nothing but admiration for what you have done.",
+    "reference": "我只想说我真的很钦佩你所做的一切",
+    "sentence_eng_Latn": "I have nothing but admiration for what you have done.",
+    "sentence_zho_Hans": "我只想说我真的很钦佩你所做的一切"
+  },
+  {
+    "source": "Lastly, as with any peaceful settlement requiring the agreement of the two parties, the aim of the talks was to enable the parties to reach agreement on consolidated technical arrangements or else to give OAU an opportunity to help them identify acceptable compromises which are consistent with the terms of the Framework Agreement and the Modalities, which remain the basic elements of the settlement plan.",
+    "reference": "最后，如同需要双方达成协议的任何和平解决办法那样，这些会谈的目的是使双方能够就综合技术安排达成协议，或者让非统组织有机会协助它们确定可以接受的与《框架协定》和《执行办法》的各项规定一致的妥协办法， 而《框架协定》和《执行办法》仍然是解决计划的基本要素。",
+    "sentence_eng_Latn": "Lastly, as with any peaceful settlement requiring the agreement of the two parties, the aim of the talks was to enable the parties to reach agreement on consolidated technical arrangements or else to give OAU an opportunity to help them identify acceptable compromises which are consistent with the terms of the Framework Agreement and the Modalities, which remain the basic elements of the settlement plan.",
+    "sentence_zho_Hans": "最后，如同需要双方达成协议的任何和平解决办法那样，这些会谈的目的是使双方能够就综合技术安排达成协议，或者让非统组织有机会协助它们确定可以接受的与《框架协定》和《执行办法》的各项规定一致的妥协办法， 而《框架协定》和《执行办法》仍然是解决计划的基本要素。"
+  },
+  {
+    "source": "So, why can't you starve in the desert?",
+    "reference": "我问你 沙漠里的狗为何憋尿？",
+    "sentence_eng_Latn": "So, why can't you starve in the desert?",
+    "sentence_zho_Hans": "我问你 沙漠里的狗为何憋尿？"
+  },
+  {
+    "source": "Don't worry.",
+    "reference": "别担心，",
+    "sentence_eng_Latn": "Don't worry.",
+    "sentence_zho_Hans": "别担心，"
+  },
+  {
+    "source": "So, they call me \"Concentration Camp\" Ehrhardt?",
+    "reference": "他们叫我集中营的艾哈特",
+    "sentence_eng_Latn": "So, they call me \"Concentration Camp\" Ehrhardt?",
+    "sentence_zho_Hans": "他们叫我集中营的艾哈特"
+  },
+  {
+    "source": "Elements",
+    "reference": "要件",
+    "sentence_eng_Latn": "Elements",
+    "sentence_zho_Hans": "要件"
+  },
+  {
+    "source": "You deserved it.",
+    "reference": "活该",
+    "sentence_eng_Latn": "You deserved it.",
+    "sentence_zho_Hans": "活该"
+  },
+  {
+    "source": "I love you",
+    "reference": "我爱妳",
+    "sentence_eng_Latn": "I love you",
+    "sentence_zho_Hans": "我爱妳"
+  },
+  {
+    "source": "And I'm the adoptive father of a disabled...",
+    "reference": "我是一名年轻残疾人的",
+    "sentence_eng_Latn": "And I'm the adoptive father of a disabled...",
+    "sentence_zho_Hans": "我是一名年轻残疾人的"
+  },
+  {
+    "source": "Statement*",
+    "reference": "声明*",
+    "sentence_eng_Latn": "Statement*",
+    "sentence_zho_Hans": "声明*"
+  },
+  {
+    "source": "Edmund!",
+    "reference": "埃德蒙",
+    "sentence_eng_Latn": "Edmund!",
+    "sentence_zho_Hans": "埃德蒙"
+  },
+  {
+    "source": "James?",
+    "reference": "阿肥呢？",
+    "sentence_eng_Latn": "James?",
+    "sentence_zho_Hans": "阿肥呢？"
+  },
+  {
+    "source": "Take it easy.",
+    "reference": "放松点",
+    "sentence_eng_Latn": "Take it easy.",
+    "sentence_zho_Hans": "放松点"
+  },
+  {
+    "source": "Emphasizes that all future and existing peacekeeping missions shall be given equal and non-discriminatory treatment in respect of financial and administrative arrangements;",
+    "reference": "5. 强调对今后和现有的所有维持和平特派团在财政和行政安排方面应平等对待、一视同仁；",
+    "sentence_eng_Latn": "Emphasizes that all future and existing peacekeeping missions shall be given equal and non-discriminatory treatment in respect of financial and administrative arrangements;",
+    "sentence_zho_Hans": "5. 强调对今后和现有的所有维持和平特派团在财政和行政安排方面应平等对待、一视同仁；"
+  },
+  {
+    "source": "Nobody's going to shoot anybody.",
+    "reference": "没有任何人要向谁开枪.",
+    "sentence_eng_Latn": "Nobody's going to shoot anybody.",
+    "sentence_zho_Hans": "没有任何人要向谁开枪."
+  },
+  {
+    "source": "Following the introduction of each of these reports, the floor will be open to members of the Committee for questions and comments.",
+    "reference": "在上述每项报告介绍之后，委员会成员可提出问题或发表意见。",
+    "sentence_eng_Latn": "Following the introduction of each of these reports, the floor will be open to members of the Committee for questions and comments.",
+    "sentence_zho_Hans": "在上述每项报告介绍之后，委员会成员可提出问题或发表意见。"
+  }
+]

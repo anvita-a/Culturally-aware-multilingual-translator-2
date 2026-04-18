@@ -1,0 +1,602 @@
+[
+  {
+    "source": "I'm sorry, Paul.",
+    "reference": "Lo siento, Paul.",
+    "sentence_eng_Latn": "I'm sorry, Paul.",
+    "sentence_spa_Latn": "Lo siento, Paul."
+  },
+  {
+    "source": "- Excuse me?",
+    "reference": "¿Disculpa?",
+    "sentence_eng_Latn": "- Excuse me?",
+    "sentence_spa_Latn": "¿Disculpa?"
+  },
+  {
+    "source": "You're not good enough to be my friend",
+    "reference": "No eres lo suficientemente buena para ser mi amiga.",
+    "sentence_eng_Latn": "You're not good enough to be my friend",
+    "sentence_spa_Latn": "No eres lo suficientemente buena para ser mi amiga."
+  },
+  {
+    "source": "I-I know.",
+    "reference": "Lo sé.",
+    "sentence_eng_Latn": "I-I know.",
+    "sentence_spa_Latn": "Lo sé."
+  },
+  {
+    "source": "I don't want to lose you.",
+    "reference": "No quiero perderte.",
+    "sentence_eng_Latn": "I don't want to lose you.",
+    "sentence_spa_Latn": "No quiero perderte."
+  },
+  {
+    "source": "Contents",
+    "reference": "ÍNDICE",
+    "sentence_eng_Latn": "Contents",
+    "sentence_spa_Latn": "ÍNDICE"
+  },
+  {
+    "source": "Okay, here we go.",
+    "reference": "Ahí vamos.",
+    "sentence_eng_Latn": "Okay, here we go.",
+    "sentence_spa_Latn": "Ahí vamos."
+  },
+  {
+    "source": "I'll find a way.",
+    "reference": "Hallaré el modo.",
+    "sentence_eng_Latn": "I'll find a way.",
+    "sentence_spa_Latn": "Hallaré el modo."
+  },
+  {
+    "source": "Be right back.",
+    "reference": "Enseguida vuelvo.",
+    "sentence_eng_Latn": "Be right back.",
+    "sentence_spa_Latn": "Enseguida vuelvo."
+  },
+  {
+    "source": "Wanna come?",
+    "reference": "¿Quiere venir?",
+    "sentence_eng_Latn": "Wanna come?",
+    "sentence_spa_Latn": "¿Quiere venir?"
+  },
+  {
+    "source": "I really hope you don't.",
+    "reference": "Realmente espero que no.",
+    "sentence_eng_Latn": "I really hope you don't.",
+    "sentence_spa_Latn": "Realmente espero que no."
+  },
+  {
+    "source": "18 A.",
+    "reference": "19 A.",
+    "sentence_eng_Latn": "18 A.",
+    "sentence_spa_Latn": "19 A."
+  },
+  {
+    "source": "- Who are you?",
+    "reference": "- ¿Quien eres tu?",
+    "sentence_eng_Latn": "- Who are you?",
+    "sentence_spa_Latn": "- ¿Quien eres tu?"
+  },
+  {
+    "source": "Because of the potential for adverse reactions in breast-fed infants, breast-feeding should be discontinued prior to initiation of treatment.",
+    "reference": "Dado el potencial de reacciones adversas en lactantes, la lactancia se deberá interrumpir antes de iniciar el tratamiento.",
+    "sentence_eng_Latn": "Because of the potential for adverse reactions in breast-fed infants, breast-feeding should be discontinued prior to initiation of treatment.",
+    "sentence_spa_Latn": "Dado el potencial de reacciones adversas en lactantes, la lactancia se deberá interrumpir antes de iniciar el tratamiento."
+  },
+  {
+    "source": "Hi.",
+    "reference": "- Hola.",
+    "sentence_eng_Latn": "Hi.",
+    "sentence_spa_Latn": "- Hola."
+  },
+  {
+    "source": "Good evening.",
+    "reference": "Buenas noches.",
+    "sentence_eng_Latn": "Good evening.",
+    "sentence_spa_Latn": "Buenas noches."
+  },
+  {
+    "source": "- Huh?",
+    "reference": "- ¿Eh?",
+    "sentence_eng_Latn": "- Huh?",
+    "sentence_spa_Latn": "- ¿Eh?"
+  },
+  {
+    "source": "That's right.",
+    "reference": "Eso es.",
+    "sentence_eng_Latn": "That's right.",
+    "sentence_spa_Latn": "Eso es."
+  },
+  {
+    "source": "And what are you doing?",
+    "reference": "¿Y qué está haciendo?",
+    "sentence_eng_Latn": "And what are you doing?",
+    "sentence_spa_Latn": "¿Y qué está haciendo?"
+  },
+  {
+    "source": "It doesn't matter what I feel.",
+    "reference": "No importa lo que siento.",
+    "sentence_eng_Latn": "It doesn't matter what I feel.",
+    "sentence_spa_Latn": "No importa lo que siento."
+  },
+  {
+    "source": "Yeah, sure.",
+    "reference": "Qué bobada.",
+    "sentence_eng_Latn": "Yeah, sure.",
+    "sentence_spa_Latn": "Qué bobada."
+  },
+  {
+    "source": "The entire building almost burned down.",
+    "reference": "Casi se quemó todo el edificio entero.",
+    "sentence_eng_Latn": "The entire building almost burned down.",
+    "sentence_spa_Latn": "Casi se quemó todo el edificio entero."
+  },
+  {
+    "source": "He's one of the most brilliant minds we have.",
+    "reference": "Es de los más inteligentes.",
+    "sentence_eng_Latn": "He's one of the most brilliant minds we have.",
+    "sentence_spa_Latn": "Es de los más inteligentes."
+  },
+  {
+    "source": "Drink?",
+    "reference": "- ¿Un trago?",
+    "sentence_eng_Latn": "Drink?",
+    "sentence_spa_Latn": "- ¿Un trago?"
+  },
+  {
+    "source": "Knock-knock.",
+    "reference": "¿Se puede?",
+    "sentence_eng_Latn": "Knock-knock.",
+    "sentence_spa_Latn": "¿Se puede?"
+  },
+  {
+    "source": "- Arrested? !",
+    "reference": "- ¿Arrestado?",
+    "sentence_eng_Latn": "- Arrested? !",
+    "sentence_spa_Latn": "- ¿Arrestado?"
+  },
+  {
+    "source": "Having regard to the proposal from the Commission(1),",
+    "reference": "Vista la propuesta de la Comisión(1),",
+    "sentence_eng_Latn": "Having regard to the proposal from the Commission(1),",
+    "sentence_spa_Latn": "Vista la propuesta de la Comisión(1),"
+  },
+  {
+    "source": "It takes time.",
+    "reference": "Lleva su tiempo.",
+    "sentence_eng_Latn": "It takes time.",
+    "sentence_spa_Latn": "Lleva su tiempo."
+  },
+  {
+    "source": "Get you back on your feet.",
+    "reference": "Ayudarte a recuperar.",
+    "sentence_eng_Latn": "Get you back on your feet.",
+    "sentence_spa_Latn": "Ayudarte a recuperar."
+  },
+  {
+    "source": "Many centuries ago, a Chinese poet foresaw a Hong Kong that glittered like the stars in the heavens.",
+    "reference": "Hace muchos siglos, un poeta chino imaginó una Hong Kong que brillara como las estrellas del cielo.",
+    "sentence_eng_Latn": "Many centuries ago, a Chinese poet foresaw a Hong Kong that glittered like the stars in the heavens.",
+    "sentence_spa_Latn": "Hace muchos siglos, un poeta chino imaginó una Hong Kong que brillara como las estrellas del cielo."
+  },
+  {
+    "source": "Contents",
+    "reference": "Índice",
+    "sentence_eng_Latn": "Contents",
+    "sentence_spa_Latn": "Índice"
+  },
+  {
+    "source": "That was pretty fast.",
+    "reference": "- Eso fue muy rápido.",
+    "sentence_eng_Latn": "That was pretty fast.",
+    "sentence_spa_Latn": "- Eso fue muy rápido."
+  },
+  {
+    "source": "I will allow it.",
+    "reference": "Lo permitiré.",
+    "sentence_eng_Latn": "I will allow it.",
+    "sentence_spa_Latn": "Lo permitiré."
+  },
+  {
+    "source": "Where, in a rule in the list, two percentages are given for the maximum value of non-originating materials that can be used, then these percentages may not be added together.",
+    "reference": "Si en una norma de la lista se establecen dos o más porcentajes relativos al valor máximo de las materias no originarias que pueden utilizarse, estos porcentajes no podrán sumarse.",
+    "sentence_eng_Latn": "Where, in a rule in the list, two percentages are given for the maximum value of non-originating materials that can be used, then these percentages may not be added together.",
+    "sentence_spa_Latn": "Si en una norma de la lista se establecen dos o más porcentajes relativos al valor máximo de las materias no originarias que pueden utilizarse, estos porcentajes no podrán sumarse."
+  },
+  {
+    "source": "She's in danger.",
+    "reference": "Está en peligro",
+    "sentence_eng_Latn": "She's in danger.",
+    "sentence_spa_Latn": "Está en peligro"
+  },
+  {
+    "source": "Battle stations.",
+    "reference": "Estaciones de batalla.",
+    "sentence_eng_Latn": "Battle stations.",
+    "sentence_spa_Latn": "Estaciones de batalla."
+  },
+  {
+    "source": "The window was open.",
+    "reference": "La ventana está abierta.",
+    "sentence_eng_Latn": "The window was open.",
+    "sentence_spa_Latn": "La ventana está abierta."
+  },
+  {
+    "source": "You got something to say, just say it.",
+    "reference": "Si tienes algo que decir, simplemente dilo.",
+    "sentence_eng_Latn": "You got something to say, just say it.",
+    "sentence_spa_Latn": "Si tienes algo que decir, simplemente dilo."
+  },
+  {
+    "source": "I think this machine works.",
+    "reference": "Creo que esta máquina funciona.",
+    "sentence_eng_Latn": "I think this machine works.",
+    "sentence_spa_Latn": "Creo que esta máquina funciona."
+  },
+  {
+    "source": "- I am not!",
+    "reference": "- ¡No soy comunista!",
+    "sentence_eng_Latn": "- I am not!",
+    "sentence_spa_Latn": "- ¡No soy comunista!"
+  },
+  {
+    "source": "Alaska.",
+    "reference": "Alaska.",
+    "sentence_eng_Latn": "Alaska.",
+    "sentence_spa_Latn": "Alaska."
+  },
+  {
+    "source": "Romania",
+    "reference": "Rumanía",
+    "sentence_eng_Latn": "Romania",
+    "sentence_spa_Latn": "Rumanía"
+  },
+  {
+    "source": "All alone?",
+    "reference": "¿Sola?",
+    "sentence_eng_Latn": "All alone?",
+    "sentence_spa_Latn": "¿Sola?"
+  },
+  {
+    "source": "This is for you.",
+    "reference": "Es para ti.",
+    "sentence_eng_Latn": "This is for you.",
+    "sentence_spa_Latn": "Es para ti."
+  },
+  {
+    "source": "Liddy.",
+    "reference": "- Liddy",
+    "sentence_eng_Latn": "Liddy.",
+    "sentence_spa_Latn": "- Liddy"
+  },
+  {
+    "source": "Sharon, please.",
+    "reference": "- Sharon, por favor.",
+    "sentence_eng_Latn": "Sharon, please.",
+    "sentence_spa_Latn": "- Sharon, por favor."
+  },
+  {
+    "source": "It's worse than death in the mines.",
+    "reference": "Es incluso peor que trabajar en las minas.",
+    "sentence_eng_Latn": "It's worse than death in the mines.",
+    "sentence_spa_Latn": "Es incluso peor que trabajar en las minas."
+  },
+  {
+    "source": "You had taken a risk.",
+    "reference": "Has tomado un riesgo.",
+    "sentence_eng_Latn": "You had taken a risk.",
+    "sentence_spa_Latn": "Has tomado un riesgo."
+  },
+  {
+    "source": "Marker.",
+    "reference": "Marker.",
+    "sentence_eng_Latn": "Marker.",
+    "sentence_spa_Latn": "Marker."
+  },
+  {
+    "source": "- I know.",
+    "reference": "- Lo sé.",
+    "sentence_eng_Latn": "- I know.",
+    "sentence_spa_Latn": "- Lo sé."
+  },
+  {
+    "source": "- Yes, love?",
+    "reference": "- ¿Si amor? .",
+    "sentence_eng_Latn": "- Yes, love?",
+    "sentence_spa_Latn": "- ¿Si amor? ."
+  },
+  {
+    "source": "- Fi!",
+    "reference": "-¡Fi!",
+    "sentence_eng_Latn": "- Fi!",
+    "sentence_spa_Latn": "-¡Fi!"
+  },
+  {
+    "source": "It doesn't work with a bow...",
+    "reference": "No funciona con un corba...",
+    "sentence_eng_Latn": "It doesn't work with a bow...",
+    "sentence_spa_Latn": "No funciona con un corba..."
+  },
+  {
+    "source": "We're only waiting for you.",
+    "reference": "¡Fuera de aquí!",
+    "sentence_eng_Latn": "We're only waiting for you.",
+    "sentence_spa_Latn": "¡Fuera de aquí!"
+  },
+  {
+    "source": "Goodbye!",
+    "reference": "¡Hasta la vista!",
+    "sentence_eng_Latn": "Goodbye!",
+    "sentence_spa_Latn": "¡Hasta la vista!"
+  },
+  {
+    "source": "My darling.",
+    "reference": "Mi querido.",
+    "sentence_eng_Latn": "My darling.",
+    "sentence_spa_Latn": "Mi querido."
+  },
+  {
+    "source": "- You're welcome.",
+    "reference": "-De nada.",
+    "sentence_eng_Latn": "- You're welcome.",
+    "sentence_spa_Latn": "-De nada."
+  },
+  {
+    "source": "I'm not here.",
+    "reference": "- No estoy aquí.",
+    "sentence_eng_Latn": "I'm not here.",
+    "sentence_spa_Latn": "- No estoy aquí."
+  },
+  {
+    "source": "- Butters.",
+    "reference": "Butters.",
+    "sentence_eng_Latn": "- Butters.",
+    "sentence_spa_Latn": "Butters."
+  },
+  {
+    "source": "Let's go to sleep.",
+    "reference": "Vamos a dormir.",
+    "sentence_eng_Latn": "Let's go to sleep.",
+    "sentence_spa_Latn": "Vamos a dormir."
+  },
+  {
+    "source": "Give me your hand.",
+    "reference": "Dame la mano.",
+    "sentence_eng_Latn": "Give me your hand.",
+    "sentence_spa_Latn": "Dame la mano."
+  },
+  {
+    "source": "You've got me.",
+    "reference": "Me tiene a mí.",
+    "sentence_eng_Latn": "You've got me.",
+    "sentence_spa_Latn": "Me tiene a mí."
+  },
+  {
+    "source": "Following intravenous administration to healthy adults, the volume of distribution (Vdss) of nevirapine was 1.21 ± 0.09 l/ kg, suggesting that nevirapine is widely distributed in humans.",
+    "reference": "Después de la administración intravenosa a adultos sanos, el volumen de distribución (Vdss) de la nevirapina fue de 1,21 ± 0,09 l/ kg, sugiriendo una amplia distribución en el ser humano.",
+    "sentence_eng_Latn": "Following intravenous administration to healthy adults, the volume of distribution (Vdss) of nevirapine was 1.21 ± 0.09 l/ kg, suggesting that nevirapine is widely distributed in humans.",
+    "sentence_spa_Latn": "Después de la administración intravenosa a adultos sanos, el volumen de distribución (Vdss) de la nevirapina fue de 1,21 ± 0,09 l/ kg, sugiriendo una amplia distribución en el ser humano."
+  },
+  {
+    "source": "Cheers.",
+    "reference": "Salud.",
+    "sentence_eng_Latn": "Cheers.",
+    "sentence_spa_Latn": "Salud."
+  },
+  {
+    "source": "Suit yourself.",
+    "reference": "haz lo que quieras.",
+    "sentence_eng_Latn": "Suit yourself.",
+    "sentence_spa_Latn": "haz lo que quieras."
+  },
+  {
+    "source": "-So?",
+    "reference": "- ¿Y?",
+    "sentence_eng_Latn": "-So?",
+    "sentence_spa_Latn": "- ¿Y?"
+  },
+  {
+    "source": "You're a good boy.",
+    "reference": "Eres un buen muchacho.",
+    "sentence_eng_Latn": "You're a good boy.",
+    "sentence_spa_Latn": "Eres un buen muchacho."
+  },
+  {
+    "source": "For the Commission",
+    "reference": "Por la Comisión",
+    "sentence_eng_Latn": "For the Commission",
+    "sentence_spa_Latn": "Por la Comisión"
+  },
+  {
+    "source": "Okay, great.",
+    "reference": "- Adiós.",
+    "sentence_eng_Latn": "Okay, great.",
+    "sentence_spa_Latn": "- Adiós."
+  },
+  {
+    "source": "Where's the sample, Kat?",
+    "reference": "¿Dónde está la muestra, Kat?",
+    "sentence_eng_Latn": "Where's the sample, Kat?",
+    "sentence_spa_Latn": "¿Dónde está la muestra, Kat?"
+  },
+  {
+    "source": "They're gone.",
+    "reference": "Se han ido",
+    "sentence_eng_Latn": "They're gone.",
+    "sentence_spa_Latn": "Se han ido"
+  },
+  {
+    "source": "I want my baby!",
+    "reference": "¡Quiero a mi bebé!",
+    "sentence_eng_Latn": "I want my baby!",
+    "sentence_spa_Latn": "¡Quiero a mi bebé!"
+  },
+  {
+    "source": "- Sure.",
+    "reference": "- Claro.",
+    "sentence_eng_Latn": "- Sure.",
+    "sentence_spa_Latn": "- Claro."
+  },
+  {
+    "source": "Let's get going.",
+    "reference": "Sigamos adelante.",
+    "sentence_eng_Latn": "Let's get going.",
+    "sentence_spa_Latn": "Sigamos adelante."
+  },
+  {
+    "source": "-What the hell does that mean?",
+    "reference": "-Qué significa eso?",
+    "sentence_eng_Latn": "-What the hell does that mean?",
+    "sentence_spa_Latn": "-Qué significa eso?"
+  },
+  {
+    "source": "However, this clarification does not impose any new obligations on Member States or holders of authorisations compared to the directives which have been adopted until now amending Annex I.",
+    "reference": "Esta aclaración, sin embargo, no impone nuevas obligaciones a los Estados miembros ni a los titulares de autorizaciones con respecto a las Directivas adoptadas hasta el momento para modificar el anexo I.",
+    "sentence_eng_Latn": "However, this clarification does not impose any new obligations on Member States or holders of authorisations compared to the directives which have been adopted until now amending Annex I.",
+    "sentence_spa_Latn": "Esta aclaración, sin embargo, no impone nuevas obligaciones a los Estados miembros ni a los titulares de autorizaciones con respecto a las Directivas adoptadas hasta el momento para modificar el anexo I."
+  },
+  {
+    "source": "- Who is it?",
+    "reference": "¿Quién?",
+    "sentence_eng_Latn": "- Who is it?",
+    "sentence_spa_Latn": "¿Quién?"
+  },
+  {
+    "source": "- Already?",
+    "reference": "- Ahora?",
+    "sentence_eng_Latn": "- Already?",
+    "sentence_spa_Latn": "- Ahora?"
+  },
+  {
+    "source": "Everybody, quiet!",
+    "reference": "¡Chicos, silencio!",
+    "sentence_eng_Latn": "Everybody, quiet!",
+    "sentence_spa_Latn": "¡Chicos, silencio!"
+  },
+  {
+    "source": "- Of course she does.",
+    "reference": "- Claro que tiene.",
+    "sentence_eng_Latn": "- Of course she does.",
+    "sentence_spa_Latn": "- Claro que tiene."
+  },
+  {
+    "source": "-Hellfish.",
+    "reference": "- Hellfish.",
+    "sentence_eng_Latn": "-Hellfish.",
+    "sentence_spa_Latn": "- Hellfish."
+  },
+  {
+    "source": "4.3 Contraindications",
+    "reference": "4.3 Contraindicaciones",
+    "sentence_eng_Latn": "4.3 Contraindications",
+    "sentence_spa_Latn": "4.3 Contraindicaciones"
+  },
+  {
+    "source": "A train.",
+    "reference": "Un tren.",
+    "sentence_eng_Latn": "A train.",
+    "sentence_spa_Latn": "Un tren."
+  },
+  {
+    "source": "Okay.",
+    "reference": "Bien.",
+    "sentence_eng_Latn": "Okay.",
+    "sentence_spa_Latn": "Bien."
+  },
+  {
+    "source": "As you can see, we have everything under control.",
+    "reference": "Tenemos todo bajo control.",
+    "sentence_eng_Latn": "As you can see, we have everything under control.",
+    "sentence_spa_Latn": "Tenemos todo bajo control."
+  },
+  {
+    "source": "If anything goes wrong, it's all down to you, Martha.",
+    "reference": "Si algo va mal, todo depende de ti, Martha.",
+    "sentence_eng_Latn": "If anything goes wrong, it's all down to you, Martha.",
+    "sentence_spa_Latn": "Si algo va mal, todo depende de ti, Martha."
+  },
+  {
+    "source": "Thomas?",
+    "reference": "- ¿Que protegería mi trabajo?",
+    "sentence_eng_Latn": "Thomas?",
+    "sentence_spa_Latn": "- ¿Que protegería mi trabajo?"
+  },
+  {
+    "source": "Alto.",
+    "reference": "-Alto.",
+    "sentence_eng_Latn": "Alto.",
+    "sentence_spa_Latn": "-Alto."
+  },
+  {
+    "source": "So, if you don't mind...",
+    "reference": "Entonces, si no te importa...",
+    "sentence_eng_Latn": "So, if you don't mind...",
+    "sentence_spa_Latn": "Entonces, si no te importa..."
+  },
+  {
+    "source": "That's really pretty.",
+    "reference": "Es muy bonito.",
+    "sentence_eng_Latn": "That's really pretty.",
+    "sentence_spa_Latn": "Es muy bonito."
+  },
+  {
+    "source": "Is someone there?",
+    "reference": "Hay alguien allí?",
+    "sentence_eng_Latn": "Is someone there?",
+    "sentence_spa_Latn": "Hay alguien allí?"
+  },
+  {
+    "source": "Survival.",
+    "reference": "Para sobrevivir.",
+    "sentence_eng_Latn": "Survival.",
+    "sentence_spa_Latn": "Para sobrevivir."
+  },
+  {
+    "source": "We need to take some X rays, though.",
+    "reference": "Señor.",
+    "sentence_eng_Latn": "We need to take some X rays, though.",
+    "sentence_spa_Latn": "Señor."
+  },
+  {
+    "source": "Wait until tomorrow.",
+    "reference": "Espera hasta mañana.",
+    "sentence_eng_Latn": "Wait until tomorrow.",
+    "sentence_spa_Latn": "Espera hasta mañana."
+  },
+  {
+    "source": "A lifetime in jail.",
+    "reference": "Toda una vida en la cárcel.",
+    "sentence_eng_Latn": "A lifetime in jail.",
+    "sentence_spa_Latn": "Toda una vida en la cárcel."
+  },
+  {
+    "source": "I know what you look like.",
+    "reference": "Sé como luces.",
+    "sentence_eng_Latn": "I know what you look like.",
+    "sentence_spa_Latn": "Sé como luces."
+  },
+  {
+    "source": "Preamble",
+    "reference": "Preámbulo",
+    "sentence_eng_Latn": "Preamble",
+    "sentence_spa_Latn": "Preámbulo"
+  },
+  {
+    "source": "But then he began to fear discovery.",
+    "reference": "Pero luego tuvo miedo, de ser descubierto.",
+    "sentence_eng_Latn": "But then he began to fear discovery.",
+    "sentence_spa_Latn": "Pero luego tuvo miedo, de ser descubierto."
+  },
+  {
+    "source": "Enough.",
+    "reference": "Suficiente.",
+    "sentence_eng_Latn": "Enough.",
+    "sentence_spa_Latn": "Suficiente."
+  },
+  {
+    "source": "Wow.",
+    "reference": "Vaya.",
+    "sentence_eng_Latn": "Wow.",
+    "sentence_spa_Latn": "Vaya."
+  }
+]

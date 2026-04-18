@@ -1,0 +1,42 @@
+[
+  {
+    "source": "The meeting is scheduled for Friday morning.",
+    "reference": "Mkutano umepangwa Ijumaa asubuhi."
+  },
+  {
+    "source": "Please submit the report by end of day.",
+    "reference": "Tafadhali wasilisha ripoti mwishoni mwa siku."
+  },
+  {
+    "source": "Can you help me with this task?",
+    "reference": "Unaweza kunisaidia na kazi hii?"
+  },
+  {
+    "source": "The project deadline has been extended.",
+    "reference": "Muda wa mwisho wa mradi umepanuliwa."
+  },
+  {
+    "source": "Thank you for your assistance.",
+    "reference": "Asante kwa msaada wako."
+  },
+  {
+    "source": "We need to discuss the budget.",
+    "reference": "Tunahitaji kujadili bajeti."
+  },
+  {
+    "source": "The document has been approved.",
+    "reference": "Hati imeidhinishwa."
+  },
+  {
+    "source": "Please review the attached file.",
+    "reference": "Tafadhali kagua faili lililohusishwa."
+  },
+  {
+    "source": "The conference starts at nine o'clock.",
+    "reference": "Mkutano mkubwa unaanza saa tatu asubuhi."
+  },
+  {
+    "source": "Your feedback is very important to us.",
+    "reference": "Maoni yako ni muhimu sana kwetu."
+  }
+]

@@ -438,7 +438,7 @@ def render_output(translation, learning_input, learning_mode, cefr_level, target
     # Use app-side gender detection — more reliable than LLM detection
     is_gendered = bool(translation.get("is_gendered", False))
 
-    tc         = TONE_CONFIG.get(detected, TONE_CONFIG["neutral"])
+    tc         = TONE_CONFIG.get(detected_src, TONE_CONFIG["neutral"])
     cefr_color = CEFR_COLORS.get(cefr_out, "#a0aec0")
     src_icons  = {"formal": "🎩", "casual": "😊", "neutral": "💬"}
     src_colors = {"formal": "#63b3ed", "casual": "#f6ad55", "neutral": "#a0aec0"}
@@ -465,7 +465,7 @@ def render_output(translation, learning_input, learning_mode, cefr_level, target
         '<div style="flex:1;">'
         '<div style="margin-bottom:6px;">' + src_html + '</div>'
         '<div class="tone-badge" style="background:' + tc["badge_bg"] + ';color:' + tc["color"] + ';">'
-        + tc["icon"] + ' Register: ' + detected.upper()
+        + tc["icon"] + ' Register: ' + detected_src.upper()
         + '</div>'
         '<div style="color:rgba(255,255,255,0.65);font-size:0.88rem;margin-top:4px;line-height:1.6;">' + reason + '</div>'
         '</div>'
@@ -575,7 +575,7 @@ def render_output(translation, learning_input, learning_mode, cefr_level, target
 
         st.markdown(
             '<div class="hero-translation">'
-            '<div class="hero-label">' + tc["icon"] + ' ' + detected.upper() + ' — Formal variant</div>'
+            '<div class="hero-label">' + tc["icon"] + ' ' + detected_src.upper() + ' — Formal variant</div>'
             '<div class="hero-text">' + formal_text + '</div>'
             + formal_pron_div
             + '<div style="font-size:11px;color:rgba(255,255,255,0.2);margin-top:6px;">'
