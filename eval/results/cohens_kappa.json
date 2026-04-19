@@ -1,0 +1,12 @@
+{
+  "n_sentences": 178,
+  "per_category": {
+    "proper_name": 0.6232,
+    "culturally_embedded": 0.6317,
+    "institutional": 0.4693,
+    "pragmatic": 0.1682
+  },
+  "macro_kappa": 0.4731,
+  "interpretation": "moderate",
+  "paper_ready": false
+}

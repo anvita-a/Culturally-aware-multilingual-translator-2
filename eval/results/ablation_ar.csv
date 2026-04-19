@@ -1,0 +1,5 @@
+condition,lang,bleu,comet,delta_bleu_vs_A,n
+A: Raw Claude (no context),ar,7.61,,+0.0,10
+B: + Formality only,ar,7.55,,-0.06,10
+C: + CoT only,ar,6.65,,-0.96,10
+D: Full system (ours),ar,35.7,,+28.09,10

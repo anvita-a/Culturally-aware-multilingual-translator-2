@@ -44,27 +44,57 @@ CSI_CATEGORIES = ["proper_name", "culturally_embedded", "institutional", "pragma
 
 
 def _get_flores_sentences(n: int = 200) -> List[str]:
-    """Get n English sentences from FLORES-200."""
-    try:
-        from datasets import load_dataset
-        flores = load_dataset("Muennighoff/flores200", "eng_Latn", split="devtest")
-        sentences = [row["sentence"] for row in flores]
+    """Get n English sentences — uses local OPUS eval data as substitute for FLORES-200."""
+    import json as _json
+    from pathlib import Path as _Path
+
+    # Try local pre-built sentence set first
+    local = _Path("eval/results/kappa_sentences.json")
+    if local.exists():
+        sentences = _json.load(open(local))
         random.seed(42)
-        return random.sample(sentences, min(n, len(sentences)))
-    except Exception as e:
-        logger.warning(f"FLORES not available: {e}. Using built-in samples.")
-        return [
-            "Let's break the ice before the meeting.",
-            "She brought mochi and wagashi to the party.",
-            "The karma of the situation was undeniable.",
-            "We celebrated Thanksgiving dinner together.",
-            "The CEO announced the new GDPR policy.",
-            "Please send kind regards to the team.",
-            "The concept of wabi-sabi is beautiful.",
-            "He knocked on wood for good luck.",
-            "The biryani at the restaurant was excellent.",
-            "That's what she said.",
-        ][:n]
+        random.shuffle(sentences)
+        return sentences[:n]
+
+    # Build from OPUS eval data
+    sentences = []
+    for lang in ["fr","es","de","hi","ar","zh","pt","ko","sw","ja"]:
+        p = _Path(f"data/flores200/en-{lang}.json")
+        if p.exists():
+            data = _json.load(open(p))
+            for item in data[:20]:
+                src = item.get("source","").strip()
+                if src and src not in sentences:
+                    sentences.append(src)
+
+    # Pad with built-in culturally rich sentences
+    builtins = [
+        "Let's break the ice before the meeting.",
+        "She brought mochi and wagashi to the party.",
+        "The karma of the situation was undeniable.",
+        "We celebrated Thanksgiving dinner together.",
+        "The CEO announced the new GDPR policy.",
+        "Please send kind regards to the team.",
+        "The concept of wabi-sabi is beautiful.",
+        "He knocked on wood for good luck.",
+        "The biryani at the restaurant was excellent.",
+        "Best regards, the management team.",
+        "Let's touch base on this tomorrow.",
+        "She has a natural green thumb.",
+        "Fill out the W-2 form before April.",
+        "Cheers to a successful project launch!",
+        "The feng shui of this office needs work.",
+        "He has been burning the midnight oil.",
+        "The NHS announced new vaccination guidelines.",
+        "They pulled the rug out from under us.",
+    ]
+    for s in builtins:
+        if s not in sentences:
+            sentences.append(s)
+
+    random.seed(42)
+    random.shuffle(sentences)
+    return sentences[:n]
 
 
 def annotate_with_claude(sentences: List[str]) -> List[Dict]:
@@ -72,68 +102,42 @@ def annotate_with_claude(sentences: List[str]) -> List[Dict]:
     First-pass annotation using Claude/Gemini.
     Returns list of {sentence, spans: [{span, category}], annotator: "claude"}
     """
-    api_key = os.getenv("GEMINI_API_KEY")
+    api_key = os.getenv("GROQ_API_KEY")
     if not api_key:
-        logger.warning("No GEMINI_API_KEY — using rule-based annotation only")
+        logger.warning("No GROQ_API_KEY — using rule-based annotation only")
         return _annotate_rule_based(sentences)
 
-    import google.generativeai as genai
-    genai.configure(api_key=api_key)
-
-    model = genai.GenerativeModel(
-        "gemini-1.5-flash",
-        generation_config=genai.GenerationConfig(
-            response_mime_type="application/json",
-            temperature=0.0,
-        )
-    )
-
+    from groq import Groq
+    client = Groq(api_key=api_key)
     results = []
     batch_size = 5
 
     for i in range(0, len(sentences), batch_size):
         batch = sentences[i:i + batch_size]
         numbered = "\n".join(f"{j+1}. {s}" for j, s in enumerate(batch))
-
         prompt = (
             "You are a cultural linguistics expert following Hershcovich et al. (2022).\n"
-            "For each sentence below, identify ALL culture-specific items (CSIs).\n\n"
+            "For each sentence, identify ALL culture-specific items (CSIs).\n\n"
             f"{numbered}\n\n"
-            "CSI categories:\n"
-            "  proper_name — holidays, cultural foods, places, events\n"
-            "  culturally_embedded — idioms, proverbs, untranslatable concepts\n"
-            "  institutional — country-specific abbreviations (CEO, NHS, GPA)\n"
-            "  pragmatic — politeness conventions, closings\n\n"
-            "Return a JSON array, one object per sentence:\n"
-            '[{"sentence_num": 1, "spans": [{"span": "...", "category": "..."}]}]\n'
-            "If no CSIs in a sentence, spans = [].\n"
-            "Return ONLY the JSON array."
+            "Categories: proper_name, culturally_embedded, institutional, pragmatic\n\n"
+            "Return JSON: {\"annotations\": [{\"sentence_num\": 1, \"spans\": [{\"span\": \"...\", \"category\": \"...\"}]}]}"
         )
-
         try:
-            response = model.generate_content(prompt)
-            raw = response.text.strip()
-            items = json.loads(raw if raw.startswith("[") else
-                               re.search(r"\[[\s\S]*\]", raw).group(0))
-
+            resp = client.chat.completions.create(
+                model="llama-3.3-70b-versatile", max_tokens=1024, temperature=0.0,
+                response_format={"type": "json_object"},
+                messages=[{"role": "user", "content": prompt}],
+            )
+            data = json.loads(resp.choices[0].message.content)
+            items = data.get("annotations", []) if isinstance(data, dict) else []
             for j, item in enumerate(items):
                 if j < len(batch):
-                    results.append({
-                        "sentence":  batch[j],
-                        "spans":     item.get("spans", []),
-                        "annotator": "gemini",
-                    })
-
-            logger.info(f"Annotated batch {i//batch_size + 1}/{(len(sentences)+batch_size-1)//batch_size}")
-
+                    results.append({"sentence": batch[j], "spans": item.get("spans", []), "annotator": "groq_llama"})
+            logger.info(f"Annotated batch {i//batch_size + 1}")
         except Exception as e:
-            logger.warning(f"Batch {i//batch_size} annotation failed: {e}")
-            for s in batch:
-                results.append({"sentence": s, "spans": [], "annotator": "fallback"})
-
+            logger.warning(f"Batch failed: {e}")
+            for s in batch: results.append({"sentence": s, "spans": [], "annotator": "fallback"})
     return results
-
-
 def _annotate_rule_based(sentences: List[str]) -> List[Dict]:
     """Fallback: use the rule-based CSI detector."""
     from pipeline.text_preprocessor import preprocess_text
@@ -159,13 +163,13 @@ def annotate_with_gpt4(annotations: List[Dict]) -> List[Dict]:
     Second-pass annotation using GPT-4 as independent annotator.
     Used when no human annotators are available.
     """
-    import openai
-    api_key = os.getenv("OPENAI_API_KEY")
+    from groq import Groq as _Groq2
+    api_key = os.getenv("GROQ_API_KEY")
     if not api_key:
-        logger.warning("No OPENAI_API_KEY — GPT-4 second pass not available")
+        logger.warning("No GROQ_API_KEY — second pass not available")
         return []
 
-    client = openai.OpenAI(api_key=api_key)
+    client = _Groq2(api_key=api_key)
     results = []
 
     for ann in annotations:
@@ -179,7 +183,7 @@ def annotate_with_gpt4(annotations: List[Dict]) -> List[Dict]:
         )
         try:
             response = client.chat.completions.create(
-                model="gpt-4o-mini",
+                model="llama-3.3-70b-versatile",
                 messages=[{"role": "user", "content": prompt}],
                 response_format={"type": "json_object"},
                 temperature=0.0,
@@ -189,7 +193,7 @@ def annotate_with_gpt4(annotations: List[Dict]) -> List[Dict]:
             results.append({
                 "sentence":  sentence,
                 "spans":     data.get("spans", []),
-                "annotator": "gpt4",
+                "annotator": "groq_llama_2",
             })
         except Exception as e:
             logger.warning(f"GPT-4 annotation failed: {e}")

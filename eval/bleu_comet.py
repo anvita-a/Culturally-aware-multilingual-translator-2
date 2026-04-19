@@ -77,7 +77,13 @@ def load_flores_sample(target_lang: str, n: int = 100) -> list[dict]:
             })
         return samples
     except Exception as e:
-        logger.warning(f"Could not load FLORES-200: {e}. Using dummy data.")
+        logger.warning(f"Could not load FLORES-200: {e}. Trying local OPUS eval set.")
+        local_path = Path("data/flores200") / f"en-{target_lang}.json"
+        if local_path.exists():
+            import json as _json
+            data = _json.load(open(local_path))
+            return data[:n]
+        logger.warning("No local eval set found either. Using dummy data.")
         return [
             {"source": "The meeting is on Friday.", "reference": "La réunion est vendredi."},
             {"source": "Please submit the report.", "reference": "Veuillez soumettre le rapport."},
@@ -103,7 +109,7 @@ def compute_bleu(hypotheses: list[str], references: list[str]) -> dict:
     bleu = sacrebleu.corpus_bleu(hypotheses, [references])
     return {
         "score": round(bleu.score, 2),
-        "signature": bleu.get_signature().format(),
+        "signature": str(bleu.sys_len),
     }
 
 

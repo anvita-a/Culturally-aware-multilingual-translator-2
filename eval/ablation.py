@@ -76,25 +76,26 @@ def compute_comet(sources, hypotheses, references) -> float | None:
 def condition_a_raw_claude(samples: list[dict], target_lang: str) -> list[str]:
     """
     Simplest possible translation prompt — just 'Translate this to X'.
-    This is what any naive implementation would do.
     No formality control, no CSI detection, no CoT, no few-shot examples.
+    Uses Groq/Llama-3.3-70B as the raw baseline.
     """
-    import anthropic
-    client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
+    from groq import Groq
+    client = Groq(api_key=os.getenv("GROQ_API_KEY"))
     lang_name = LANGUAGE_NAMES.get(target_lang, target_lang)
     hypotheses = []
 
     for i, sample in enumerate(samples):
         try:
-            msg = client.messages.create(
-                model="claude-sonnet-4-6",
+            resp = client.chat.completions.create(
+                model="llama-3.3-70b-versatile",
                 max_tokens=256,
+                temperature=0.1,
                 messages=[{
                     "role": "user",
-                    "content": f"Translate to {lang_name}: {sample['source']}"
+                    "content": f"Translate to {lang_name}. Reply with only the translation: {sample['source']}"
                 }],
             )
-            hypotheses.append(msg.content[0].text.strip())
+            hypotheses.append(resp.choices[0].message.content.strip())
         except Exception as e:
             logger.warning(f"Condition A failed for sample {i}: {e}")
             hypotheses.append("")
@@ -113,10 +114,10 @@ def condition_b_formality_only(samples: list[dict], target_lang: str) -> list[st
     but NO CSI detection, NO few-shot examples, NO CoT.
     Isolates the contribution of formality analysis.
     """
-    import anthropic
+    from groq import Groq
     from pipeline.formality_classifier import classify_formality
 
-    client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
+    client = Groq(api_key=os.getenv("GROQ_API_KEY"))
     lang_name = LANGUAGE_NAMES.get(target_lang, target_lang)
     hypotheses = []
 
@@ -128,14 +129,15 @@ def condition_b_formality_only(samples: list[dict], target_lang: str) -> list[st
                 f"The source text is written in a {formality} register. "
                 f"Match the register in your translation.\n\n"
                 f"Text: {sample['source']}\n\n"
-                f"Translation:"
+                f"Reply with only the translation."
             )
-            msg = client.messages.create(
-                model="claude-sonnet-4-6",
+            resp = client.chat.completions.create(
+                model="llama-3.3-70b-versatile",
                 max_tokens=256,
+                temperature=0.1,
                 messages=[{"role": "user", "content": prompt}],
             )
-            hypotheses.append(msg.content[0].text.strip())
+            hypotheses.append(resp.choices[0].message.content.strip())
         except Exception as e:
             logger.warning(f"Condition B failed for sample {i}: {e}")
             hypotheses.append("")
@@ -154,8 +156,8 @@ def condition_c_cot_only(samples: list[dict], target_lang: str) -> list[str]:
     NO CSI detection, NO few-shot examples.
     Isolates the contribution of chain-of-thought reasoning.
     """
-    import anthropic
-    client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
+    from groq import Groq
+    client = Groq(api_key=os.getenv("GROQ_API_KEY"))
     lang_name = LANGUAGE_NAMES.get(target_lang, target_lang)
     hypotheses = []
 
@@ -170,12 +172,13 @@ def condition_c_cot_only(samples: list[dict], target_lang: str) -> list[str]:
                 f"Text: {sample['source']}\n\n"
                 f"Respond with only the translation, no explanation."
             )
-            msg = client.messages.create(
-                model="claude-sonnet-4-6",
+            resp = client.chat.completions.create(
+                model="llama-3.3-70b-versatile",
                 max_tokens=256,
+                temperature=0.1,
                 messages=[{"role": "user", "content": prompt}],
             )
-            hypotheses.append(msg.content[0].text.strip())
+            hypotheses.append(resp.choices[0].message.content.strip())
         except Exception as e:
             logger.warning(f"Condition C failed for sample {i}: {e}")
             hypotheses.append("")

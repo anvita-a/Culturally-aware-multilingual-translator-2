@@ -62,24 +62,19 @@ GENDER_TRIGGER_WORDS = {
 # ── LLM backends ──────────────────────────────────────────────────────────────
 
 def _call_gemini(prompt: str, max_tokens: int) -> str:
-    try:
-        import google.generativeai as genai
-    except ImportError:
-        raise EnvironmentError("google-generativeai not installed. Run: pip install google-generativeai")
     api_key = os.getenv("GEMINI_API_KEY")
     if not api_key:
         raise EnvironmentError("No GEMINI_API_KEY")
-    genai.configure(api_key=api_key)
-    model = genai.GenerativeModel(
-        "gemini-1.5-flash",
-        generation_config=genai.GenerationConfig(
-            response_mime_type="application/json",
-            max_output_tokens=max_tokens,
-            temperature=0.1,
+    try:
+        from google import genai
+        client = genai.Client(api_key=api_key)
+        response = client.models.generate_content(
+            model="gemini-2.0-flash",
+            contents=prompt,
         )
-    )
-    response = model.generate_content(prompt)
-    return response.text
+        return response.text
+    except ImportError:
+        raise EnvironmentError("google-genai not installed. Run: pip install google-genai")
 
 
 def _call_openai(prompt: str, max_tokens: int, model: str) -> str:
@@ -116,7 +111,7 @@ def _call_groq(prompt: str, max_tokens: int) -> str:
 def _call_llm(prompt: str, max_tokens: int = 1500) -> tuple[str, str]:
     attempts = [
         ("groq-llama-3.3",   lambda: _call_groq(prompt, max_tokens)),
-        ("gemini-1.5-flash", lambda: _call_gemini(prompt, max_tokens)),
+        ("gemini-2.0-flash", lambda: _call_gemini(prompt, max_tokens)),
         ("gpt-4o-mini",      lambda: _call_openai(prompt, max_tokens, "gpt-4o-mini")),
         ("gpt-3.5-turbo",    lambda: _call_openai(prompt, max_tokens, "gpt-3.5-turbo")),
     ]

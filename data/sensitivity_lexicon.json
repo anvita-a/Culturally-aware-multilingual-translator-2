@@ -1,90 +1,532 @@
 {
   "ja": [
-    {"term": "death", "warning_type": "taboo", "severity": "medium",
-     "suggestion": "Avoid direct mention of death in Japanese professional contexts — use indirect phrasing or euphemisms."},
-    {"term": "number 4", "warning_type": "cultural_taboo", "severity": "low",
-     "suggestion": "4 (shi) sounds like death in Japanese — avoid in gift quantities or formal contexts."},
-    {"term": "number 9", "warning_type": "cultural_taboo", "severity": "low",
-     "suggestion": "9 (ku) sounds like suffering in Japanese — avoid in formal or gift contexts."},
-    {"term": "tip", "warning_type": "cultural_norm", "severity": "low",
-     "suggestion": "Tipping is considered rude in Japan — remove references to tipping."},
-    {"term": "fox", "warning_type": "cultural_reference", "severity": "low",
-     "suggestion": "Foxes (kitsune) have supernatural connotations in Japanese folklore — be mindful in metaphorical use."}
+    {
+      "term": "death",
+      "warning_type": "taboo",
+      "severity": "medium",
+      "suggestion": "Avoid direct mention of death in Japanese professional contexts — use indirect phrasing or euphemisms."
+    },
+    {
+      "term": "number 4",
+      "warning_type": "cultural_taboo",
+      "severity": "low",
+      "suggestion": "4 (shi) sounds like death in Japanese — avoid in gift quantities or formal contexts."
+    },
+    {
+      "term": "number 9",
+      "warning_type": "cultural_taboo",
+      "severity": "low",
+      "suggestion": "9 (ku) sounds like suffering in Japanese — avoid in gift quantities."
+    },
+    {
+      "term": "fox",
+      "warning_type": "cultural_reference",
+      "severity": "low",
+      "suggestion": "Foxes (kitsune) have supernatural connotations in Japanese folklore — use carefully in metaphors."
+    },
+    {
+      "term": "direct command",
+      "warning_type": "pragmatic",
+      "severity": "high",
+      "suggestion": "Direct commands are considered rude in Japanese — use polite request forms (～てください or ～ていただけますか)."
+    },
+    {
+      "term": "no",
+      "warning_type": "pragmatic",
+      "severity": "medium",
+      "suggestion": "Direct refusal is uncommon in Japanese — indirect expressions like 'it may be difficult' are preferred."
+    },
+    {
+      "term": "tip",
+      "warning_type": "cultural_norm",
+      "severity": "medium",
+      "suggestion": "Tipping is considered rude in Japan — it implies the service was not good enough without it."
+    },
+    {
+      "term": "funeral",
+      "warning_type": "taboo",
+      "severity": "high",
+      "suggestion": "Funeral references are extremely sensitive — avoid casual use and use appropriate honorific language."
+    },
+    {
+      "term": "four",
+      "warning_type": "cultural_taboo",
+      "severity": "medium",
+      "suggestion": "4 (si) sounds like death in Chinese — avoid in gifts, sets, floor numbers."
+    },
+    {
+      "term": "nine",
+      "warning_type": "cultural_taboo",
+      "severity": "low",
+      "suggestion": "9 (ku) sounds like suffering in Japanese — avoid in gift quantities."
+    }
   ],
   "ar": [
-    {"term": "left hand", "warning_type": "cultural_taboo", "severity": "high",
-     "suggestion": "The left hand is considered unclean in Arab culture — specify right hand for giving/receiving objects."},
-    {"term": "pork", "warning_type": "religious", "severity": "high",
-     "suggestion": "Pork is forbidden in Islam — substitute with halal alternatives in food-related contexts."},
-    {"term": "alcohol", "warning_type": "religious", "severity": "high",
-     "suggestion": "Alcohol is forbidden in Islam — avoid in formal or religious contexts. Use 'beverages' instead."},
-    {"term": "dog", "warning_type": "cultural_taboo", "severity": "medium",
-     "suggestion": "Dogs are considered unclean in many Islamic traditions — avoid using dog metaphors positively."},
-    {"term": "israel", "warning_type": "political", "severity": "high",
-     "suggestion": "This term is politically sensitive across Arab-speaking regions — use with care in professional contexts."}
+    {
+      "term": "left hand",
+      "warning_type": "cultural_taboo",
+      "severity": "high",
+      "suggestion": "The left hand is considered unclean in Arab culture — specify right hand for giving/receiving objects."
+    },
+    {
+      "term": "pork",
+      "warning_type": "religious",
+      "severity": "high",
+      "suggestion": "Pork is forbidden in Islam — substitute with halal alternatives in food-related contexts."
+    },
+    {
+      "term": "alcohol",
+      "warning_type": "religious",
+      "severity": "high",
+      "suggestion": "Alcohol is forbidden in Islam — avoid in formal or professional contexts with Arab audiences."
+    },
+    {
+      "term": "dog",
+      "warning_type": "cultural_taboo",
+      "severity": "medium",
+      "suggestion": "Dogs are considered unclean in Islamic tradition — avoid using dog metaphors or casual references."
+    },
+    {
+      "term": "inshallah",
+      "warning_type": "pragmatic",
+      "severity": "medium",
+      "suggestion": "Inshallah is a sincere religious expression, not just a vague response — treat with appropriate respect."
+    },
+    {
+      "term": "pointing",
+      "warning_type": "cultural_norm",
+      "severity": "low",
+      "suggestion": "Pointing with the index finger is rude in Arab cultures — use an open hand gesture instead."
+    },
+    {
+      "term": "ramadan",
+      "warning_type": "religious",
+      "severity": "medium",
+      "suggestion": "During Ramadan, eating/drinking in public is disrespectful — acknowledge the holy month appropriately."
+    },
+    {
+      "term": "israel",
+      "warning_type": "political",
+      "severity": "high",
+      "suggestion": "References to Israel are politically sensitive in many Arab-speaking regions — use neutral phrasing."
+    }
   ],
   "hi": [
-    {"term": "cow", "warning_type": "religious", "severity": "high",
-     "suggestion": "Cows are sacred in Hinduism — avoid negative references or food-related contexts."},
-    {"term": "beef", "warning_type": "religious", "severity": "high",
-     "suggestion": "Beef consumption is taboo in Hindu culture — substitute with neutral food references."},
-    {"term": "left hand", "warning_type": "cultural_taboo", "severity": "medium",
-     "suggestion": "In Indian culture, the left hand is considered impure — specify right hand for giving/greeting."},
-    {"term": "caste", "warning_type": "social_sensitivity", "severity": "high",
-     "suggestion": "Caste references are highly sensitive — avoid unless directly discussing the social system."}
+    {
+      "term": "cow",
+      "warning_type": "religious",
+      "severity": "high",
+      "suggestion": "Cows are sacred in Hinduism — avoid negative references or food-related contexts."
+    },
+    {
+      "term": "beef",
+      "warning_type": "religious",
+      "severity": "high",
+      "suggestion": "Beef consumption is taboo in Hindu culture — substitute with neutral food references."
+    },
+    {
+      "term": "left hand",
+      "warning_type": "cultural_taboo",
+      "severity": "medium",
+      "suggestion": "The left hand is considered inauspicious — use right hand references for giving/receiving."
+    },
+    {
+      "term": "leather",
+      "warning_type": "religious",
+      "severity": "medium",
+      "suggestion": "Leather products (especially cowhide) are offensive in Hindu contexts — specify material type carefully."
+    },
+    {
+      "term": "widow",
+      "warning_type": "cultural_sensitivity",
+      "severity": "medium",
+      "suggestion": "Widows face significant stigma in traditional Indian contexts — use sensitive, neutral language."
+    },
+    {
+      "term": "caste",
+      "warning_type": "political",
+      "severity": "high",
+      "suggestion": "Caste references are extremely sensitive in India — avoid unless specifically necessary."
+    },
+    {
+      "term": "namaste",
+      "warning_type": "cultural_norm",
+      "severity": "low",
+      "suggestion": "Namaste is a respectful greeting — do not trivialise or use as a joke."
+    },
+    {
+      "term": "toilet",
+      "warning_type": "pragmatic",
+      "severity": "low",
+      "suggestion": "Use indirect terms like 'washroom' or 'facilities' in formal Hindi contexts."
+    },
+    {
+      "term": "steak",
+      "warning_type": "religious",
+      "severity": "high",
+      "suggestion": "Beef/steak consumption is taboo in Hindu culture — substitute with neutral food references."
+    }
   ],
   "zh": [
-    {"term": "number 4", "warning_type": "cultural_taboo", "severity": "medium",
-     "suggestion": "4 (si) sounds like death in Chinese — avoid in gifts, phone numbers, floor numbers."},
-    {"term": "clock", "warning_type": "cultural_taboo", "severity": "medium",
-     "suggestion": "Gifting a clock sounds like attending a funeral in Chinese culture — avoid as gift reference."},
-    {"term": "green hat", "warning_type": "cultural_taboo", "severity": "high",
-     "suggestion": "A green hat means a man's wife is unfaithful in Chinese culture — never use this metaphor."},
-    {"term": "taiwan", "warning_type": "political", "severity": "high",
-     "suggestion": "Taiwan's political status is sensitive in Chinese contexts — use careful neutral phrasing."}
+    {
+      "term": "number 4",
+      "warning_type": "cultural_taboo",
+      "severity": "medium",
+      "suggestion": "4 (si) sounds like death in Chinese — avoid in gifts, phone numbers, floor numbers."
+    },
+    {
+      "term": "clock",
+      "warning_type": "cultural_taboo",
+      "severity": "medium",
+      "suggestion": "Gifting a clock sounds like attending a funeral in Chinese culture — avoid as gift reference."
+    },
+    {
+      "term": "green hat",
+      "warning_type": "cultural_taboo",
+      "severity": "high",
+      "suggestion": "A green hat (戴绿帽子) signifies infidelity in Chinese culture — never gift or reference."
+    },
+    {
+      "term": "pear",
+      "warning_type": "cultural_taboo",
+      "severity": "medium",
+      "suggestion": "Sharing a pear (分梨) sounds like separation — avoid in relationship contexts."
+    },
+    {
+      "term": "umbrella",
+      "warning_type": "cultural_taboo",
+      "severity": "low",
+      "suggestion": "Umbrella (伞) sounds like scatter/disperse — avoid as a gift."
+    },
+    {
+      "term": "taiwan",
+      "warning_type": "political",
+      "severity": "high",
+      "suggestion": "Taiwan is politically extremely sensitive in mainland China — use neutral phrasing or avoid."
+    },
+    {
+      "term": "tiananmen",
+      "warning_type": "political",
+      "severity": "high",
+      "suggestion": "Tiananmen Square events are heavily censored — avoid in Chinese-language content."
+    },
+    {
+      "term": "face",
+      "warning_type": "cultural_concept",
+      "severity": "high",
+      "suggestion": "Face (面子, mianzi) is a critical social concept — never publicly embarrass someone or cause loss of face."
+    },
+    {
+      "term": "four",
+      "warning_type": "cultural_taboo",
+      "severity": "medium",
+      "suggestion": "4 (si) sounds like death in Chinese — avoid in gifts, sets, floor numbers."
+    },
+    {
+      "term": "nine",
+      "warning_type": "cultural_taboo",
+      "severity": "low",
+      "suggestion": "9 (ku) sounds like suffering in Japanese — avoid in gift quantities."
+    }
   ],
   "ko": [
-    {"term": "number 4", "warning_type": "cultural_taboo", "severity": "medium",
-     "suggestion": "4 (sa) sounds like death in Korean — avoid in gift quantities and formal contexts."},
-    {"term": "red ink", "warning_type": "cultural_taboo", "severity": "medium",
-     "suggestion": "Writing someone's name in red ink symbolises death in Korean culture — avoid."},
-    {"term": "dokdo", "warning_type": "political", "severity": "high",
-     "suggestion": "Dokdo/Takeshima is a politically contested territory — avoid or use neutral phrasing."}
+    {
+      "term": "number 4",
+      "warning_type": "cultural_taboo",
+      "severity": "medium",
+      "suggestion": "4 (sa) sounds like death in Korean — avoid in gift quantities and formal contexts."
+    },
+    {
+      "term": "red ink",
+      "warning_type": "cultural_taboo",
+      "severity": "medium",
+      "suggestion": "Writing someone's name in red ink symbolises death in Korean culture — avoid."
+    },
+    {
+      "term": "fan death",
+      "warning_type": "cultural_belief",
+      "severity": "low",
+      "suggestion": "Fan death is a widely held belief in Korea — avoid dismissing it casually."
+    },
+    {
+      "term": "age",
+      "warning_type": "cultural_norm",
+      "severity": "medium",
+      "suggestion": "Age determines social hierarchy in Korea — always use appropriate honorific speech levels based on age."
+    },
+    {
+      "term": "ppalli ppalli",
+      "warning_type": "cultural_concept",
+      "severity": "low",
+      "suggestion": "Korean culture values speed and efficiency (빨리빨리) — delays may be perceived negatively."
+    },
+    {
+      "term": "jeong",
+      "warning_type": "cultural_concept",
+      "severity": "low",
+      "suggestion": "Jeong (정) is a deep emotional bond unique to Korean culture — has no direct English equivalent."
+    },
+    {
+      "term": "japan",
+      "warning_type": "historical_sensitivity",
+      "severity": "high",
+      "suggestion": "Japanese colonial history is extremely sensitive in Korea — avoid casual references to Japanese-Korean relations."
+    },
+    {
+      "term": "comfort women",
+      "warning_type": "historical_sensitivity",
+      "severity": "high",
+      "suggestion": "This is an extremely sensitive historical topic — only reference in appropriate educational contexts."
+    }
   ],
   "de": [
-    {"term": "nazi", "warning_type": "historical_sensitivity", "severity": "high",
-     "suggestion": "Nazi references are extremely sensitive in Germany — avoid casual use."},
-    {"term": "hitler", "warning_type": "historical_sensitivity", "severity": "high",
-     "suggestion": "References to Hitler are legally restricted in Germany — use only in clearly historical educational contexts."},
-    {"term": "swastika", "warning_type": "historical_sensitivity", "severity": "high",
-     "suggestion": "The swastika is illegal as a symbol in Germany — reference only in clearly anti-fascist historical contexts."}
+    {
+      "term": "nazi",
+      "warning_type": "historical_sensitivity",
+      "severity": "high",
+      "suggestion": "Nazi references are extremely sensitive in Germany — avoid casual use."
+    },
+    {
+      "term": "hitler",
+      "warning_type": "historical_sensitivity",
+      "severity": "high",
+      "suggestion": "References to Hitler are legally restricted in Germany — use only in clearly historical educational contexts."
+    },
+    {
+      "term": "swastika",
+      "warning_type": "legal",
+      "severity": "high",
+      "suggestion": "The swastika is illegal in Germany — never use in any context."
+    },
+    {
+      "term": "holocaust",
+      "warning_type": "historical_sensitivity",
+      "severity": "high",
+      "suggestion": "Holocaust references require extreme sensitivity and proper historical framing."
+    },
+    {
+      "term": "east germany",
+      "warning_type": "historical_sensitivity",
+      "severity": "medium",
+      "suggestion": "East/West Germany division is still a sensitive topic for many Germans — use carefully."
+    },
+    {
+      "term": "punctuality",
+      "warning_type": "cultural_norm",
+      "severity": "low",
+      "suggestion": "Germans place high value on punctuality — lateness is considered disrespectful."
+    },
+    {
+      "term": "privacy",
+      "warning_type": "cultural_norm",
+      "severity": "medium",
+      "suggestion": "Germans have strong privacy values (Datenschutz) — avoid personal questions in professional settings."
+    },
+    {
+      "term": "title",
+      "warning_type": "pragmatic",
+      "severity": "medium",
+      "suggestion": "Professional titles (Dr., Prof.) are important in German culture — always use them in formal address."
+    }
   ],
   "fr": [
-    {"term": "tu", "warning_type": "pragmatic", "severity": "medium",
-     "suggestion": "The tu/vous distinction is critical in French — using tu with a stranger is considered rude. Always prefer vous in professional contexts."},
-    {"term": "bise", "warning_type": "cultural_norm", "severity": "low",
-     "suggestion": "La bise (cheek kiss greeting) has very specific regional rules in France — explain rather than translate literally."}
+    {
+      "term": "tu",
+      "warning_type": "pragmatic",
+      "severity": "medium",
+      "suggestion": "The tu/vous distinction is critical in French — using tu with a stranger is considered rude. Always prefer vous in professional contexts."
+    },
+    {
+      "term": "bise",
+      "warning_type": "cultural_norm",
+      "severity": "low",
+      "suggestion": "La bise (cheek kiss greeting) has very specific regional rules in France — explain rather than translate literally."
+    },
+    {
+      "term": "laicite",
+      "warning_type": "political",
+      "severity": "high",
+      "suggestion": "French secularism (laïcité) is a sensitive political topic — treat with care in religious discussions."
+    },
+    {
+      "term": "religion",
+      "warning_type": "political",
+      "severity": "medium",
+      "suggestion": "France strictly separates church and state — avoid religious expressions in formal/official contexts."
+    },
+    {
+      "term": "lunch",
+      "warning_type": "cultural_norm",
+      "severity": "low",
+      "suggestion": "Lunch is a serious, extended meal in French culture — avoid scheduling meetings during this time."
+    },
+    {
+      "term": "strike",
+      "warning_type": "cultural_norm",
+      "severity": "low",
+      "suggestion": "Strikes (grèves) are common and socially accepted in France — do not express negativity about workers' rights."
+    },
+    {
+      "term": "corsica",
+      "warning_type": "political",
+      "severity": "medium",
+      "suggestion": "Corsican independence is a sensitive political issue — use neutral phrasing."
+    },
+    {
+      "term": "algeria",
+      "warning_type": "historical_sensitivity",
+      "severity": "high",
+      "suggestion": "French-Algerian colonial history is extremely sensitive — use careful, neutral language."
+    }
   ],
   "es": [
-    {"term": "coger", "warning_type": "offensive_in_target", "severity": "high",
-     "suggestion": "Neutral in Spain ('to grab') but a strong sexual obscenity in Latin America — use 'tomar' or 'agarrar' instead."},
-    {"term": "concha", "warning_type": "offensive_in_target", "severity": "high",
-     "suggestion": "Means 'shell' in Spain but a strong sexual obscenity in Argentina/Chile — use 'caracola' instead."},
-    {"term": "bicho", "warning_type": "regional", "severity": "medium",
-     "suggestion": "Means 'bug' in Spain but 'penis' in some Latin American countries — use a more specific term."}
+    {
+      "term": "coger",
+      "warning_type": "offensive_in_target",
+      "severity": "high",
+      "suggestion": "Neutral in Spain ('to grab') but a strong sexual obscenity in Latin America — use 'tomar' or 'agarrar' instead."
+    },
+    {
+      "term": "concha",
+      "warning_type": "offensive_in_target",
+      "severity": "high",
+      "suggestion": "Means 'shell' in Spain but a strong sexual obscenity in Argentina/Chile — use 'caracola' instead."
+    },
+    {
+      "term": "bicho",
+      "warning_type": "regional",
+      "severity": "medium",
+      "suggestion": "Means 'bug' in Spain but can be offensive in some Latin American countries — use 'insecto' instead."
+    },
+    {
+      "term": "macho",
+      "warning_type": "cultural_concept",
+      "severity": "medium",
+      "suggestion": "Machismo is a complex cultural concept — avoid using 'macho' casually as it has deep cultural implications."
+    },
+    {
+      "term": "siesta",
+      "warning_type": "cultural_stereotype",
+      "severity": "low",
+      "suggestion": "Siesta is a cultural practice but should not be used as a stereotype — use respectfully."
+    },
+    {
+      "term": "spain vs latin america",
+      "warning_type": "regional",
+      "severity": "medium",
+      "suggestion": "Spanish varies significantly between Spain and Latin America — specify regional variant when accuracy matters."
+    },
+    {
+      "term": "vosotros",
+      "warning_type": "regional",
+      "severity": "low",
+      "suggestion": "Vosotros is only used in Spain — Latin American Spanish uses ustedes for all plural address."
+    },
+    {
+      "term": "indigenous",
+      "warning_type": "political",
+      "severity": "high",
+      "suggestion": "Indigenous peoples and their rights are a sensitive political topic in Latin America — use respectful, accurate terminology."
+    }
   ],
   "pt": [
-    {"term": "rapariga", "warning_type": "regional", "severity": "medium",
-     "suggestion": "Means 'girl' in European Portuguese but 'prostitute' in Brazilian Portuguese — use 'moca' or 'garota' in Brazilian contexts."},
-    {"term": "bicha", "warning_type": "regional", "severity": "high",
-     "suggestion": "Means 'queue' in Portugal but is a homophobic slur in Brazil — avoid entirely, use 'fila' instead."}
+    {
+      "term": "rapariga",
+      "warning_type": "regional",
+      "severity": "medium",
+      "suggestion": "Means 'girl' in European Portuguese but 'prostitute' in Brazilian Portuguese — use 'moça' or 'garota' in Brazilian contexts."
+    },
+    {
+      "term": "bicha",
+      "warning_type": "regional",
+      "severity": "high",
+      "suggestion": "Means 'queue' in Portugal but is a homophobic slur in Brazil — avoid entirely, use 'fila' instead."
+    },
+    {
+      "term": "bunda",
+      "warning_type": "regional",
+      "severity": "medium",
+      "suggestion": "Vulgar in European Portuguese but more casual in Brazilian Portuguese — use context-appropriate alternatives."
+    },
+    {
+      "term": "camisola",
+      "warning_type": "regional",
+      "severity": "low",
+      "suggestion": "Means 'sweater' in Portugal but 'nightgown' in Brazil — specify when clarity is needed."
+    },
+    {
+      "term": "fixe",
+      "warning_type": "regional",
+      "severity": "low",
+      "suggestion": "Means 'cool/great' in Portugal but is not used in Brazil — use 'legal' or 'bacana' for Brazilian audiences."
+    },
+    {
+      "term": "amazon",
+      "warning_type": "political",
+      "severity": "high",
+      "suggestion": "Amazon deforestation is an extremely sensitive political topic in Brazil — use careful, neutral language."
+    },
+    {
+      "term": "carnival",
+      "warning_type": "cultural_norm",
+      "severity": "low",
+      "suggestion": "Carnival has deep cultural significance in Brazil — treat with respect, not as mere entertainment."
+    },
+    {
+      "term": "corruption",
+      "warning_type": "political",
+      "severity": "high",
+      "suggestion": "Political corruption is a highly sensitive topic in Brazil — use neutral, factual language."
+    }
   ],
   "sw": [
-    {"term": "pork", "warning_type": "religious", "severity": "high",
-     "suggestion": "Much of Swahili-speaking East Africa is Muslim — pork is forbidden. Use 'nyama' (meat) generically."},
-    {"term": "alcohol", "warning_type": "religious", "severity": "medium",
-     "suggestion": "Alcohol is discouraged in many Swahili-speaking Muslim communities — use neutral phrasing."},
-    {"term": "witchcraft", "warning_type": "cultural_sensitivity", "severity": "medium",
-     "suggestion": "Witchcraft (uchawi) accusations are taken seriously in East Africa — avoid casual use."}
+    {
+      "term": "pork",
+      "warning_type": "religious",
+      "severity": "high",
+      "suggestion": "Much of Swahili-speaking East Africa is Muslim — pork is forbidden. Use 'nyama' (meat) generically."
+    },
+    {
+      "term": "alcohol",
+      "warning_type": "religious",
+      "severity": "medium",
+      "suggestion": "Alcohol is discouraged in many Swahili-speaking Muslim communities — use neutral phrasing."
+    },
+    {
+      "term": "left hand",
+      "warning_type": "cultural_taboo",
+      "severity": "medium",
+      "suggestion": "The left hand is considered unclean in East African Muslim communities — specify right hand for giving/receiving."
+    },
+    {
+      "term": "elder",
+      "warning_type": "cultural_norm",
+      "severity": "medium",
+      "suggestion": "Elders command deep respect in East African culture — always use respectful address forms."
+    },
+    {
+      "term": "tribe",
+      "warning_type": "political",
+      "severity": "high",
+      "suggestion": "'Tribe' is considered offensive in many African contexts — use 'ethnic group' or 'community' instead."
+    },
+    {
+      "term": "africa",
+      "warning_type": "cultural_stereotype",
+      "severity": "medium",
+      "suggestion": "Avoid treating Africa as a monolithic entity — Swahili-speaking East Africa has its own distinct cultures."
+    },
+    {
+      "term": "ujamaa",
+      "warning_type": "political",
+      "severity": "low",
+      "suggestion": "Ujamaa (African socialism) has specific political meaning in Tanzania — use accurately."
+    },
+    {
+      "term": "witchcraft",
+      "warning_type": "cultural_sensitivity",
+      "severity": "high",
+      "suggestion": "Witchcraft beliefs are serious in many East African communities — never mock or trivialise."
+    }
   ]
 }

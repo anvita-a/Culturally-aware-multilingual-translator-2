@@ -258,16 +258,9 @@ def _llm_based_csi(text: str, target_lang: str) -> List[CSISpan]:
         api_key = os.getenv("GEMINI_API_KEY")
         if api_key:
             try:
-                import google.generativeai as genai
-                genai.configure(api_key=api_key)
-                model = genai.GenerativeModel(
-                    "gemini-1.5-flash",
-                    generation_config=genai.GenerationConfig(
-                        response_mime_type="application/json",
-                        temperature=0.1,
-                    ),
-                )
-                response = model.generate_content(prompt)
+                from google import genai as _genai_new
+                _genai_client = _genai_new.Client(api_key=api_key)
+                response = _genai_client.models.generate_content(model='gemini-2.0-flash', contents=prompt)
                 raw = response.text.strip()
             except Exception as e:
                 logger.debug(f"Gemini CSI detection failed: {e}")

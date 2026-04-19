@@ -164,7 +164,7 @@ def _llm_classify_formality(text: str, lang: str) -> Optional[tuple[str, float]]
         return None
 
     try:
-        import google.generativeai as genai
+        from google import genai as _genai_new
         import json
         genai.configure(api_key=api_key)
 
@@ -193,7 +193,7 @@ def _llm_classify_formality(text: str, lang: str) -> Optional[tuple[str, float]]
                 temperature=0.1,
             )
         )
-        response = model.generate_content(prompt)
+        response = _genai_client.models.generate_content(model='gemini-2.0-flash', contents=prompt)
         data = json.loads(response.text)
         label = data.get("label", "neutral")
         conf  = float(data.get("confidence", 0.75))

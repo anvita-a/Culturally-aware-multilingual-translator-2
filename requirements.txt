@@ -3,17 +3,14 @@
 # Install: pip install -r requirements.txt
 # ══════════════════════════════════════════════════════════════════
 
-
 # ── Core UI ───────────────────────────────────────────────────────
 streamlit>=1.35.0
 
-
 # ── LLM API backends (app uses whichever key is in .env) ──────────
-google-generativeai>=0.7.0          # Gemini — free, recommended for campus WiFi
-openai>=1.30.0                      # GPT-4o-mini / GPT-3.5-turbo
-groq>=0.9.0                         # Llama 3.3 70B — free tier
+groq>=0.9.0                         # Groq/Llama-3.3-70B — PRIMARY backend (free tier)
+google-genai>=1.0.0                 # Gemini 2.0 Flash — SECONDARY fallback (NEW SDK)
+openai>=1.30.0                      # GPT-4o-mini / GPT-3.5-turbo — last resort fallback
 anthropic>=0.25.0                   # Claude — used only in build_opus_index.py
-
 
 # ── Pipeline dependencies ─────────────────────────────────────────
 python-dotenv>=1.0.0                # .env file loading
@@ -21,47 +18,73 @@ langdetect>=1.0.9                   # Source language detection
 json-repair>=0.25.0                 # Fixes malformed LLM JSON output
 rank-bm25>=0.2.2                    # BM25 retrieval for few-shot examples
 
-
-# ── ML / NLP (formality classifier + future Asmi/Anshul models) ──
+# ── ML / NLP (formality classifier + MarianMT attention heatmap) ──
 torch>=2.2.0                        # PyTorch — required by transformers
-transformers>=4.40.0                # XLM-RoBERTa formality classifier
+transformers>=4.40.0                # XLM-RoBERTa formality classifier + MarianMT
 accelerate>=0.29.0                  # Required by transformers Trainer
 sentencepiece>=0.2.0                # Tokenizer for multilingual models
 protobuf>=4.25.0                    # Required by sentencepiece
+safetensors>=0.4.0                  # Model weights format
 
-
-# ── Datasets ─────────────────────────────────────────────────────
-datasets>=2.19.0                    # FLORES-200, OPUS-100, Pavlick formality scores
-
+# ── Datasets ──────────────────────────────────────────────────────
+datasets>=2.19.0                    # OPUS-100, Pavlick formality scores, eval sets
+huggingface-hub>=0.22.0             # HuggingFace model/dataset downloads
 
 # ── Data processing ───────────────────────────────────────────────
-pandas>=2.2.0                       # CSV handling in build_formality_data.py
-numpy>=1.26.0                       # Numerical ops in train_formality.py
-scikit-learn>=1.4.0                 # Train/test split in build_formality_data.py
+pandas>=2.2.0                       # CSV handling
+numpy>=1.26.0                       # Numerical ops
+scikit-learn>=1.4.0                 # Train/test split, classification metrics
 
+# ── Evaluation ────────────────────────────────────────────────────
+sacrebleu>=2.4.0                    # BLEU + ChrF evaluation metrics
+scipy>=1.12.0                       # Cohen's kappa (inter-annotator agreement)
 
-# ── Evaluation (run in Week 3) ────────────────────────────────────
-sacrebleu>=2.4.0                    # BLEU score evaluation
-unbabel-comet>=2.2.0                # COMET neural MT evaluation metric
-googletrans==4.0.0rc1               # Google Translate baseline comparison
+# ── Visualization (attention heatmap) ─────────────────────────────
+plotly>=5.20.0                      # Interactive attention heatmap
 
+# ══════════════════════════════════════════════════════════════════
+# OPTIONAL — uncomment as needed
+# ══════════════════════════════════════════════════════════════════
+
+# COMET neural MT evaluation (1.5GB download, only for paper eval):
+# unbabel-comet>=2.2.0
+
+# Google Translate baseline comparison (only for paper eval):
+# googletrans==4.0.0rc1             # Pinned to rc1 — stable release is broken
+
+# Speech pipeline (Anshul's components):
+# openai-whisper                    # ASR (used via OpenAI API, no local install needed)
+
+# Learning layer (Anshul's components):
+# stanza                            # Universal Dependencies morpheme tagging
+# genanki                           # Anki flashcard export (.apkg format)
+# pykakasi                          # Japanese romanization
+# pypinyin                          # Mandarin pinyin
 
 # ══════════════════════════════════════════════════════════════════
 # NOTES
+# ══════════════════════════════════════════════════════════════════
+#
+# IMPORTANT: google-generativeai is DEPRECATED. Use google-genai instead.
+#   OLD (broken): pip install google-generativeai
+#   NEW (correct): pip install google-genai
 #
 # PyTorch install:
-#   The torch line above installs the CPU version by default.
-#   If you have a GPU: pip install torch --index-url https://download.pytorch.org/whl/cu118
+#   CPU (default): pip install torch
+#   GPU (CUDA 11.8): pip install torch --index-url https://download.pytorch.org/whl/cu118
+#   Apple Silicon: pip install torch  (MPS acceleration automatic)
 #
-# googletrans pinned to rc1:
-#   The stable release of googletrans is broken. The rc1 version works.
-#   Only needed for eval/bleu_comet.py (Week 3), not for the app itself.
+# Minimum set to run the app (no training, no eval):
+#   pip install streamlit python-dotenv langdetect json-repair rank-bm25 \
+#               groq openai anthropic google-genai datasets \
+#               torch transformers sentencepiece safetensors plotly
 #
-# unbabel-comet:
-#   Downloads ~1.5GB model on first use. Only needed for Week 3 evaluation.
-#   If you want to skip it for now: comment out the unbabel-comet line.
+# Full install including eval:
+#   pip install -r requirements.txt
 #
-# Minimum set to run the app right now (no training, no eval):
-#   pip install streamlit python-dotenv langdetect json-repair rank-bm25
-#          google-generativeai openai groq datasets
+# API keys needed in .env:
+#   GROQ_API_KEY=gsk_...         (free at console.groq.com)
+#   GEMINI_API_KEY=AIza...       (free at aistudio.google.com — use google-genai SDK)
+#   OPENAI_API_KEY=sk-...        (optional fallback)
+#   ANTHROPIC_API_KEY=sk-ant-... (optional, only for build_opus_index.py)
 # ══════════════════════════════════════════════════════════════════

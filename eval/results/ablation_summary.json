@@ -1,0 +1,8 @@
+{
+  "ablation_avg_bleu": {
+    "A_raw_llm": 18.5,
+    "D_full_system": 47.6,
+    "improvement": 29.1,
+    "relative_pct": 157.0
+  }
+}

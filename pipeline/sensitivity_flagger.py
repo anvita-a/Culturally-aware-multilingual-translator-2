@@ -99,13 +99,21 @@ def _llm_flags(text: str, target_lang: str) -> List[SensitivityFlag]:
     from dotenv import load_dotenv
     load_dotenv()
 
-    api_key = os.getenv("GEMINI_API_KEY")
-    if not api_key:
+    # Try Groq first, then Gemini
+    groq_key = os.getenv("GROQ_API_KEY")
+    gemini_key = os.getenv("GEMINI_API_KEY")
+    if not groq_key and not gemini_key:
         return []
 
     try:
-        import google.generativeai as genai
-        genai.configure(api_key=api_key)
+        if groq_key:
+            from groq import Groq as _SensGroq
+            _sens_client = _SensGroq(api_key=groq_key)
+            _use_groq = True
+        else:
+            from google import genai as _genai_new
+            _genai_client = _genai_new.Client(api_key=gemini_key)
+            _use_groq = False
 
         prompt = (
             f'Review this English text for cultural sensitivity issues when '
@@ -121,15 +129,19 @@ def _llm_flags(text: str, target_lang: str) -> List[SensitivityFlag]:
             f'If no issues, return []. Return ONLY the JSON array.'
         )
 
-        model = genai.GenerativeModel(
-            "gemini-1.5-flash",
-            generation_config=genai.GenerationConfig(
-                response_mime_type="application/json",
-                temperature=0.1,
-            ),
-        )
-        response = model.generate_content(prompt)
-        raw = response.text.strip()
+        if _use_groq:
+            resp = _sens_client.chat.completions.create(
+                model="llama-3.3-70b-versatile", max_tokens=512, temperature=0.1,
+                response_format={"type": "json_object"},
+                messages=[{"role":"system","content":"You are a cultural sensitivity expert. Always respond with JSON object containing 'issues' array."},
+                          {"role":"user","content":prompt+"\n\nRespond as: {\"issues\": [...array...]}"}],
+            )
+            data = json.loads(resp.choices[0].message.content)
+            items_raw = data.get("issues", data) if isinstance(data, dict) else data
+            raw = json.dumps(items_raw) if isinstance(items_raw, list) else "[]"
+        else:
+            response = _genai_client.models.generate_content(model='gemini-2.0-flash', contents=prompt)
+            raw = response.text.strip()
 
         if raw.startswith("["):
             items = json.loads(raw)
